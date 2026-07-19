@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: weather_data
+    schema: raw
+    tables:
+      - name: Weather_Underground_Ichtegem_BE
+      - name: Weather_Underground_La_Madeleine_FR
+      - name: station_meteo_infoclimat
+    
