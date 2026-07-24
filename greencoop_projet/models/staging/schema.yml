@@ -1,0 +1,36 @@
+version: 2
+
+models:
+ - name: dim_weather_stations
+   columns:
+    - name: station_id
+      data_tests:
+        - unique
+        - not_null
+    - name: latitude
+      data_tests:
+        - not_null
+    - name: longitude
+      data_tests:
+        - not_null
+    - name: station_type
+      data_tests:
+        - not_null
+        - accepted_values:
+            arguments:
+              values:
+                - amateur
+                - officielle
+                
+ - name: fact_weather_observations
+   columns:
+    - name: station_id
+      data_tests:
+        - not_null
+        - relationships:
+            arguments:
+              to: ref('dim_weather_stations')
+              field: station_id
+    - name: observation_time
+      data_tests:
+        - not_null
