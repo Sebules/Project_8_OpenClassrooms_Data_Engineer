@@ -1,0 +1,1 @@
+SELECT * FROM {{ref('fact_weather_observations')}} WHERE temperature_c < dew_point_c

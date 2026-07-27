@@ -1,0 +1,1 @@
+SELECT * FROM {{ref('fact_weather_observations')}} WHERE precip_accum_mm < precip_rate_mm

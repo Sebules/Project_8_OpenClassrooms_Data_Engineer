@@ -1,5 +1,35 @@
 --Documents/cours Openclassrooms/Data Engineer/projet 8/greencoop_projet/models/marts/dim_weather_stations.sql
-{{ config(materialized='table') }}
+{{ config(
+    materialized = 'table',
+       
+    post_hook = [
+        "ALTER TABLE {{this}}
+        ADD CONSTRAINT pk_dim_weather_stations
+        PRIMARY KEY (station_id)",
+        
+        "CREATE INDEX IF NOT EXISTS idx_dim_weather_stations_station_id
+        ON {{this}} (station_id)",
+        
+        "CREATE INDEX IF NOT EXISTS idx_dim_weather_stations_city
+        ON {{this}} (city)",
+        
+        "CREATE INDEX IF NOT EXISTS idx_dim_weather_stations_station_type
+        ON {{this}} (station_type)",
+    
+        "ALTER TABLE {{this}}
+        ADD CONSTRAINT chk_station_type
+        CHECK (station_type IN ('amateur','officielle'))",
+    
+        "ALTER TABLE {{ this }}
+        ADD CONSTRAINT chk_dim_weather_latitude
+        CHECK (latitude BETWEEN -90 AND 90)",
+    
+        "ALTER TABLE {{ this }}
+        ADD CONSTRAINT chk_dim_weather_longitude
+        CHECK (longitude BETWEEN -180 AND 180)"
+    
+    ]
+) }}
 
 SELECT
     station_id,
