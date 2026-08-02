@@ -3,7 +3,8 @@
 
 SELECT 
     station.key AS station_id,
-    (obs.value ->> 'dh_utc')::timestamp AS observation_time,
+    ((obs.value ->> 'dh_utc')::timestamp)::date AS observation_date,
+    ((obs.value ->> 'dh_utc')::timestamp)::time AS observation_time,
     (obs.value ->> 'temperature')::numeric AS temperature_c,
     (obs.value ->> 'pression')::numeric AS pressure_hpa,
     (obs.value ->> 'humidite')::numeric AS humidity_pct,

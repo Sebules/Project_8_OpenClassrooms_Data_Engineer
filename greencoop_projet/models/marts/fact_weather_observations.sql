@@ -6,7 +6,7 @@
 
         "ALTER TABLE {{this}}
         ADD CONSTRAINT pk_fact_weather_observations
-        PRIMARY KEY (station_id, observation_time)",
+        PRIMARY KEY (station_id, observation_date, observation_time)",
         
         "ALTER TABLE {{this}}
         ADD CONSTRAINT fk_fact_weather_observations_weather_station
@@ -16,8 +16,8 @@
         "CREATE INDEX IF NOT EXISTS idx_fact_weather_observations_observation_time
         ON {{this}} (observation_time)",
 
-        "CREATE INDEX IF NOT EXISTS idx_fact_weather_observations_hour
-        ON {{this}} (date_trunc('hour', observation_time))",
+        "CREATE INDEX IF NOT EXISTS idx_fact_weather_observations_observation_date
+        ON {{this}} (observation_date)",
     
         "ALTER TABLE {{this}}
         ADD CONSTRAINT chk_fact_weather_observations_humidity
@@ -51,6 +51,7 @@
 
 SELECT
     station_id,
+    observation_date,
     observation_time,
     temperature_c,
     dew_point_c,

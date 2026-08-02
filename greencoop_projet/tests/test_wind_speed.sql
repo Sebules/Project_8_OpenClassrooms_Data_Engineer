@@ -1,0 +1,1 @@
+SELECT * FROM {{ref('fact_weather_observations')}} WHERE wind_gust_kmh < wind_speed_kmh

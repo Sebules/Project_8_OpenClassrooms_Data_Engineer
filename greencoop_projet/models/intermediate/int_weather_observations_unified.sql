@@ -2,6 +2,7 @@
 WITH wu_be AS (
     SELECT
         station_id,
+        observation_date,
         observation_time,
         temperature_c,
         dew_point_c,
@@ -18,6 +19,7 @@ WITH wu_be AS (
 wu_fr AS (
     SELECT
         station_id,
+        observation_date,
         observation_time,
         temperature_c,
         dew_point_c,
@@ -34,6 +36,7 @@ wu_fr AS (
 infoclimat AS (
     SELECT
         station_id,
+        observation_date,
         observation_time,
         temperature_c,
         dew_point_c,

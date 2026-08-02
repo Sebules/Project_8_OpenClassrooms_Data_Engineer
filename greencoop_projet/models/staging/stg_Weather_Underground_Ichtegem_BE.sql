@@ -35,8 +35,8 @@ SELECT
     "UV" AS uv_index,
     -- Rafales : mph -> km/h
     ROUND(REGEXP_REPLACE("Gust", '[^0-9\.\-]', '', 'g')::NUMERIC * 1.60934, 2)  AS wind_gust_kmh,
-    DATE '2024-10-01' + day_number::integer + "Time"::time AS observation_time,
-    --"Time"::TIME AS observation_time,
+    (DATE '2024-10-01' + day_number::integer)::date AS observation_date,
+    "Time"::time AS observation_time,
     -- Vent: passage des valeurs en degrés par cohérence avec les données officielles
     CASE LOWER("Wind")
         WHEN 'north' THEN 0

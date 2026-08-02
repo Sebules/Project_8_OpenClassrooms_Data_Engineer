@@ -18,7 +18,7 @@ models:
       data_tests:
         - not_null
     - name: station_type
-      description: if the station is non-official or official.
+      description: if the station is non-official (amateur) or official (officielle).
       data_tests:
         - not_null
         - accepted_values:
@@ -39,6 +39,10 @@ models:
               to: ref('dim_weather_stations')
               field: station_id
     - name: observation_time
-      description: date and hour of an observation
+      description: hour of an observation
+      data_tests:
+        - not_null
+    - name: observation_date
+      description:  date of an observation
       data_tests:
         - not_null
