@@ -1,0 +1,48 @@
+version: 2
+
+models:
+ - name: dim_weather_stations
+   description: table that contains metadata of the weather stations
+   columns:
+    - name: station_id
+      description: unique identification of the station
+      data_tests:
+        - unique
+        - not_null
+    - name: latitude
+      description: from geographical coordinate, latitude of the station
+      data_tests:
+        - not_null
+    - name: longitude
+      description: from geographical coordinate, longitude of the station
+      data_tests:
+        - not_null
+    - name: station_type
+      description: if the station is non-official (amateur) or official (officielle).
+      data_tests:
+        - not_null
+        - accepted_values:
+            arguments:
+              values:
+                - amateur
+                - officielle
+                
+ - name: fact_weather_observations
+   description: table that contains the observation data from each weather station
+   columns:
+    - name: station_id
+      description: identification of the station for each observation data
+      data_tests:
+        - not_null
+        - relationships:
+            arguments:
+              to: ref('dim_weather_stations')
+              field: station_id
+    - name: observation_time
+      description: hour of an observation
+      data_tests:
+        - not_null
+    - name: observation_date
+      description:  date of an observation
+      data_tests:
+        - not_null

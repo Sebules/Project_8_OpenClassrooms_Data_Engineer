@@ -1,0 +1,16 @@
+# https://docs.getdbt.com/reference/dbt-jinja-functions/env_var?version=2.0
+
+greencoop_projet:
+  outputs:
+    dev:
+      dbname: "{{ env_var('DB_NAME') }}"
+      host: "{{ env_var('DB_HOST') }}"
+      pass: "{{ env_var('DB_PASSWORD') }}"
+      port: "{{ env_var('DB_PORT') | int }}"
+      schema: analytics
+      threads: 4
+      type: postgres
+      user: "{{ env_var('DB_USER') }}"
+  target: dev
+
+# env_var est utilisé pour ne pas mettre les données en dur dans le fichier

@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: weather_data
+    description: database for raw weather observation data 
+    schema: raw
+    tables:
+      - name: Weather_Underground_Ichtegem_BE
+        description: raw data from Ichtegem weather station in Belgium. Unofficial data.
+      - name: Weather_Underground_La_Madeleine_FR
+        description: raw data from La Madeleine weather station in France. Unofficial data.
+      - name: station_meteo_infoclimat
+        description: raw data from official weather stations of infoclimat.
+    
