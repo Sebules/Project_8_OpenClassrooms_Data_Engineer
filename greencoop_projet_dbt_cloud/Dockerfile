@@ -7,4 +7,4 @@ COPY . .
 RUN pip install dbt-postgres
 
 
-CMD ["sh", "-c", "dbt seed && dbt build"]
+CMD ["dbt","build"]

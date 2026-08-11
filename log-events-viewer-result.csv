@@ -1,0 +1,63 @@
+timestamp,message
+1786440701706,[0m09:31:41  Running with dbt=1.12.0
+1786440702023,[0m09:31:42  Registered adapter: postgres=1.11.0
+1786440702384,[0m09:31:42  Unable to do partial parsing because of a version mismatch
+1786440704759,[0m09:31:44  [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+1786440704759,There are 1 unused configuration paths:
+1786440704759,'"- models.greencoop_projet.example"
+1786440705097,"[0m09:31:45  Found 7 models, 15 data tests, 1 seed, 3 sources, 477 macros"
+1786440705101,[0m09:31:45  
+1786440705101,[0m09:31:45  Concurrency: 4 threads (target='dev')
+1786440705101,[0m09:31:45  
+1786440705333,[0m09:31:45  1 of 23 START sql view model analytics.stg_Weather_Underground_Ichtegem_BE ..... [RUN]
+1786440705336,[0m09:31:45  2 of 23 START sql view model analytics.stg_Weather_Underground_La_Madeleine_FR . [RUN]
+1786440705337,[0m09:31:45  3 of 23 START sql view model analytics.stg_station_meteo_infoclimat ............ [RUN]
+1786440705338,[0m09:31:45  4 of 23 START sql view model analytics.stg_station_meteo_infoclimat_observation  [RUN]
+1786440705608,[0m09:31:45  4 of 23 OK created sql view model analytics.stg_station_meteo_infoclimat_observation  [[32mCREATE VIEW[0m in 0.25s]
+1786440705619,[0m09:31:45  5 of 23 START seed file analytics.metadonnees_stations_amateurs ................ [RUN]
+1786440705620,[0m09:31:45  1 of 23 OK created sql view model analytics.stg_Weather_Underground_Ichtegem_BE  [[32mCREATE VIEW[0m in 0.28s]
+1786440705624,[0m09:31:45  3 of 23 OK created sql view model analytics.stg_station_meteo_infoclimat ....... [[32mCREATE VIEW[0m in 0.28s]
+1786440705626,[0m09:31:45  2 of 23 OK created sql view model analytics.stg_Weather_Underground_La_Madeleine_FR  [[32mCREATE VIEW[0m in 0.28s]
+1786440705659,[0m09:31:45  6 of 23 START sql view model analytics.int_weather_observations_unified ........ [RUN]
+1786440705759,[0m09:31:45  5 of 23 OK loaded seed file analytics.metadonnees_stations_amateurs ............ [[32mINSERT 2[0m in 0.14s]
+1786440705761,[0m09:31:45  6 of 23 OK created sql view model analytics.int_weather_observations_unified ... [[32mCREATE VIEW[0m in 0.09s]
+1786440705764,[0m09:31:45  7 of 23 START sql table model analytics.dim_weather_stations ................... [RUN]
+1786440705901,[0m09:31:45  7 of 23 OK created sql table model analytics.dim_weather_stations .............. [[32mSELECT 6[0m in 0.14s]
+1786440705904,[0m09:31:45  8 of 23 START test accepted_values_dim_weather_stations_station_type__amateur__officielle  [RUN]
+1786440705905,[0m09:31:45  9 of 23 START test not_null_dim_weather_stations_latitude ...................... [RUN]
+1786440705906,[0m09:31:45  10 of 23 START test not_null_dim_weather_stations_longitude .................... [RUN]
+1786440705907,[0m09:31:45  11 of 23 START test not_null_dim_weather_stations_station_id ................... [RUN]
+1786440706045,[0m09:31:46  9 of 23 PASS not_null_dim_weather_stations_latitude ............................ [[32mPASS[0m in 0.14s]
+1786440706049,[0m09:31:46  12 of 23 START test not_null_dim_weather_stations_station_type ................. [RUN]
+1786440706069,[0m09:31:46  8 of 23 PASS accepted_values_dim_weather_stations_station_type__amateur__officielle  [[32mPASS[0m in 0.16s]
+1786440706070,[0m09:31:46  11 of 23 PASS not_null_dim_weather_stations_station_id ......................... [[32mPASS[0m in 0.16s]
+1786440706072,[0m09:31:46  10 of 23 PASS not_null_dim_weather_stations_longitude .......................... [[32mPASS[0m in 0.16s]
+1786440706077,[0m09:31:46  13 of 23 START test unique_dim_weather_stations_station_id ..................... [RUN]
+1786440706134,[0m09:31:46  12 of 23 PASS not_null_dim_weather_stations_station_type ....................... [[32mPASS[0m in 0.08s]
+1786440706143,[0m09:31:46  13 of 23 PASS unique_dim_weather_stations_station_id ........................... [[32mPASS[0m in 0.06s]
+1786440706145,[0m09:31:46  14 of 23 START sql table model analytics.fact_weather_observations ............. [RUN]
+1786440706398,[0m09:31:46  14 of 23 OK created sql table model analytics.fact_weather_observations ........ [[32mSELECT 4950[0m in 0.25s]
+1786440706400,[0m09:31:46  15 of 23 START test not_null_fact_weather_observations_observation_date ........ [RUN]
+1786440706402,[0m09:31:46  16 of 23 START test not_null_fact_weather_observations_observation_time ........ [RUN]
+1786440706403,[0m09:31:46  17 of 23 START test not_null_fact_weather_observations_station_id .............. [RUN]
+1786440706404,[0m09:31:46  18 of 23 START test relationships_fact_weather_observations_station_id__station_id__ref_dim_weather_stations_  [RUN]
+1786440706514,[0m09:31:46  16 of 23 PASS not_null_fact_weather_observations_observation_time .............. [[32mPASS[0m in 0.11s]
+1786440706518,[0m09:31:46  19 of 23 START test test_humidity .............................................. [RUN]
+1786440706529,[0m09:31:46  17 of 23 PASS not_null_fact_weather_observations_station_id .................... [[32mPASS[0m in 0.12s]
+1786440706531,[0m09:31:46  15 of 23 PASS not_null_fact_weather_observations_observation_date .............. [[32mPASS[0m in 0.13s]
+1786440706536,[0m09:31:46  20 of 23 START test test_precipitation ......................................... [RUN]
+1786440706538,[0m09:31:46  18 of 23 PASS relationships_fact_weather_observations_station_id__station_id__ref_dim_weather_stations_  [[32mPASS[0m in 0.13s]
+1786440706539,[0m09:31:46  21 of 23 START test test_temperature ........................................... [RUN]
+1786440706547,[0m09:31:46  22 of 23 START test test_wind_direction ........................................ [RUN]
+1786440706624,[0m09:31:46  19 of 23 PASS test_humidity .................................................... [[32mPASS[0m in 0.10s]
+1786440706627,[0m09:31:46  23 of 23 START test test_wind_speed ............................................ [RUN]
+1786440706637,[0m09:31:46  21 of 23 PASS test_temperature ................................................. [[32mPASS[0m in 0.10s]
+1786440706647,[0m09:31:46  20 of 23 PASS test_precipitation ............................................... [[32mPASS[0m in 0.11s]
+1786440706651,[0m09:31:46  22 of 23 PASS test_wind_direction .............................................. [[32mPASS[0m in 0.10s]
+1786440706680,[0m09:31:46  23 of 23 PASS test_wind_speed .................................................. [[32mPASS[0m in 0.05s]
+1786440706711,[0m09:31:46  
+1786440706712,"[0m09:31:46  Finished running 1 seed, 2 table models, 15 data tests, 5 view models in 0 hours 0 minutes and 1.61 seconds (1.61s)."
+1786440706780,[0m09:31:46  
+1786440706781,[0m09:31:46  [32mCompleted successfully[0m
+1786440706781,[0m09:31:46  
+1786440706782,[0m09:31:46  Done. PASS=23 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=23

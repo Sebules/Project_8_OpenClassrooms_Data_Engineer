@@ -3,6 +3,7 @@
     materialized = 'table',
        
     post_hook = [
+        "DROP INDEX IF EXISTS analytics.pk_dim_weather_stations CASCADE",        
         "ALTER TABLE {{this}}
         ADD CONSTRAINT pk_dim_weather_stations
         PRIMARY KEY (station_id)",
@@ -16,14 +17,17 @@
         "CREATE INDEX IF NOT EXISTS idx_dim_weather_stations_station_type
         ON {{this}} (station_type)",
     
+        "ALTER TABLE {{ this }} DROP CONSTRAINT IF EXISTS chk_station_type",
         "ALTER TABLE {{this}}
         ADD CONSTRAINT chk_station_type
         CHECK (station_type IN ('amateur','officielle'))",
     
+        "ALTER TABLE {{ this }} DROP CONSTRAINT IF EXISTS chk_dim_weather_latitude",
         "ALTER TABLE {{ this }}
         ADD CONSTRAINT chk_dim_weather_latitude
         CHECK (latitude BETWEEN -90 AND 90)",
     
+        "ALTER TABLE {{ this }} DROP CONSTRAINT IF EXISTS chk_dim_weather_longitude",
         "ALTER TABLE {{ this }}
         ADD CONSTRAINT chk_dim_weather_longitude
         CHECK (longitude BETWEEN -180 AND 180)"
