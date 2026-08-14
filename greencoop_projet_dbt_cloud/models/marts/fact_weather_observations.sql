@@ -4,39 +4,28 @@
     
     post_hook=[
 
-        "DROP INDEX IF EXISTS analytics.pk_fact_weather_observations CASCADE",
-        "ALTER TABLE {{this}}
-        ADD CONSTRAINT pk_fact_weather_observations
-        PRIMARY KEY (station_id, observation_date, observation_time)",
-        
-        "DROP INDEX IF EXISTS analytics.fk_fact_weather_observations_weather_station CASCADE",
-        "ALTER TABLE {{this}}
-        ADD CONSTRAINT fk_fact_weather_observations_weather_station
-        FOREIGN KEY (station_id)
-        REFERENCES {{ref('dim_weather_stations')}} (station_id)",
-
         "CREATE INDEX IF NOT EXISTS idx_fact_weather_observations_observation_time
         ON {{this}} (observation_time)",
 
         "CREATE INDEX IF NOT EXISTS idx_fact_weather_observations_observation_date
         ON {{this}} (observation_date)",
     
-        "ALTER TABLE {{ this }} DROP CONSTRAINT IF EXISTS chk_fact_weather_observations_humidity",
+        "ALTER TABLE {{this}} DROP CONSTRAINT IF EXISTS chk_fact_weather_observations_humidity",
         "ALTER TABLE {{this}}
         ADD CONSTRAINT chk_fact_weather_observations_humidity
         CHECK (humidity_pct IS NULL OR humidity_pct BETWEEN 0 AND 100 )",
     
-        "ALTER TABLE {{ this }} DROP CONSTRAINT IF EXISTS chk_fact_weather_observations_wind_direction",
+        "ALTER TABLE {{this}} DROP CONSTRAINT IF EXISTS chk_fact_weather_observations_wind_direction",
         "ALTER TABLE {{this}}
         ADD CONSTRAINT chk_fact_weather_observations_wind_direction
         CHECK (wind_direction_deg IS NULL OR wind_direction_deg BETWEEN 0 AND 360)",
     
-        "ALTER TABLE {{ this }} DROP CONSTRAINT IF EXISTS chk_fact_weather_observations_pressure",
+        "ALTER TABLE {{this}} DROP CONSTRAINT IF EXISTS chk_fact_weather_observations_pressure",
         "ALTER TABLE {{this}}
         ADD CONSTRAINT chk_fact_weather_observations_pressure
         CHECK (pressure_hpa IS NULL OR pressure_hpa BETWEEN 800 AND 1100)",
     
-        "ALTER TABLE {{ this }} DROP CONSTRAINT IF EXISTS chk_fact_weather_observations_precipitation",
+        "ALTER TABLE {{this}} DROP CONSTRAINT IF EXISTS chk_fact_weather_observations_precipitation",
         "ALTER TABLE {{this}}
         ADD CONSTRAINT chk_fact_weather_observations_precipitation
         CHECK (
@@ -45,7 +34,7 @@
             (precip_accum_mm IS NULL OR precip_accum_mm >= 0)
         )",
     
-        "ALTER TABLE {{ this }} DROP CONSTRAINT IF EXISTS chk_fact_weather_observations_wind_speed",
+        "ALTER TABLE {{this}} DROP CONSTRAINT IF EXISTS chk_fact_weather_observations_wind_speed",
         "ALTER TABLE {{this}}
         ADD CONSTRAINT chk_fact_weather_observations_wind_speed
         CHECK (
