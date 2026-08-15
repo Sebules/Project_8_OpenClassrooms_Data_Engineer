@@ -85,7 +85,33 @@ models:
       data_type: integer
       data_tests:
         - not_null
-             
+
+ - name: dim_time
+   description: table that contains the times of the observations
+   config:
+    contract:
+      enforced: true
+   columns:
+    - name: observation_time
+      description: observation time
+      data_type: time
+      constraints:
+        - type: not_null
+        - type: primary_key
+      data_tests:
+        - unique
+        - not_null
+    - name: hour
+      description: hour of the observation
+      data_type: integer
+      data_tests:
+        - not_null
+    - name: minute
+      description: minutes of the observation
+      data_type: integer
+      data_tests:
+        - not_null
+          
  - name: fact_weather_observations
    description: table that contains the observation data from each weather station
    config:
@@ -102,6 +128,10 @@ models:
       columns: [observation_date]
       to: ref('dim_calendar')
       to_columns: [observation_date]
+    - type: foreign_key
+      columns: [observation_time]
+      to: ref('dim_time')
+      to_columns: [observation_time]
    columns:
     - name: station_id
       description: identification of the station for each observation data
@@ -117,6 +147,10 @@ models:
       data_type: time
       data_tests:
         - not_null
+        - relationships:
+            arguments:
+              to: ref('dim_time')
+              field: observation_time
     - name: observation_date
       description:  date of an observation
       data_type: date
