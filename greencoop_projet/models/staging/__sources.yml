@@ -11,4 +11,7 @@ sources:
         description: raw data from La Madeleine weather station in France. Unofficial data.
       - name: station_meteo_infoclimat
         description: raw data from official weather stations of infoclimat.
+      - name: Calendar
+        description: calendar (year, month, day)
+
     
