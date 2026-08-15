@@ -3,22 +3,32 @@ version: 2
 models:
  - name: dim_weather_stations
    description: table that contains metadata of the weather stations
+   config:
+    contract:
+      enforced: true
    columns:
     - name: station_id
       description: unique identification of the station
+      data_type: text
+      constraints:
+        - type: not_null
+        - type: primary_key
       data_tests:
         - unique
         - not_null
     - name: latitude
       description: from geographical coordinate, latitude of the station
+      data_type: float
       data_tests:
         - not_null
     - name: longitude
       description: from geographical coordinate, longitude of the station
+      data_type: float
       data_tests:
         - not_null
     - name: station_type
       description: if the station is non-official (amateur) or official (officielle).
+      data_type: text
       data_tests:
         - not_null
         - accepted_values:
@@ -26,12 +36,106 @@ models:
               values:
                 - amateur
                 - officielle
-                
+    - name: city
+      description: name of the city where the station is.
+      data_type: text
+    - name: elevation
+      description: elevation of the station.
+      data_type: decimal
+    - name: hardware
+      description: hardware used by the station for the observations.
+      data_type: text
+    - name: software
+      description: software used by the station for the observations.
+      data_type: text
+    - name: state
+      description: state where the station is located.
+      data_type: integer
+    - name: station_name
+      description: name of the station.
+      data_type: text
+
+ - name: dim_calendar
+   description: table that contains the dates of the observations
+   config:
+    contract:
+      enforced: true
+   columns:
+    - name: observation_date
+      description: observation date
+      data_type: date
+      constraints:
+        - type: not_null
+        - type: primary_key
+      data_tests:
+        - unique
+        - not_null
+    - name: year
+      description: year of the observation
+      data_type: integer
+      data_tests:
+        - not_null
+    - name: month
+      description: month of the observation
+      data_type: integer
+      data_tests:
+        - not_null
+    - name: day
+      description: day of the observation
+      data_type: integer
+      data_tests:
+        - not_null
+
+ - name: dim_time
+   description: table that contains the times of the observations
+   config:
+    contract:
+      enforced: true
+   columns:
+    - name: observation_time
+      description: observation time
+      data_type: time
+      constraints:
+        - type: not_null
+        - type: primary_key
+      data_tests:
+        - unique
+        - not_null
+    - name: hour
+      description: hour of the observation
+      data_type: integer
+      data_tests:
+        - not_null
+    - name: minute
+      description: minutes of the observation
+      data_type: integer
+      data_tests:
+        - not_null
+          
  - name: fact_weather_observations
    description: table that contains the observation data from each weather station
+   config:
+    contract:
+      enforced: true
+   constraints:
+    - type: primary_key
+      columns: [station_id, observation_date, observation_time]
+    - type: foreign_key
+      columns: [station_id]
+      to: ref('dim_weather_stations')
+      to_columns: [station_id]
+    - type: foreign_key
+      columns: [observation_date]
+      to: ref('dim_calendar')
+      to_columns: [observation_date]
+    - type: foreign_key
+      columns: [observation_time]
+      to: ref('dim_time')
+      to_columns: [observation_time]
    columns:
     - name: station_id
       description: identification of the station for each observation data
+      data_type: text
       data_tests:
         - not_null
         - relationships:
@@ -40,9 +144,46 @@ models:
               field: station_id
     - name: observation_time
       description: hour of an observation
+      data_type: time
       data_tests:
         - not_null
+        - relationships:
+            arguments:
+              to: ref('dim_time')
+              field: observation_time
     - name: observation_date
       description:  date of an observation
+      data_type: date
       data_tests:
         - not_null
+        - relationships:
+            arguments:
+              to: ref('dim_calendar')
+              field: observation_date
+    - name: dew_point_c
+      description: dew point in Celsius degrees.
+      data_type: decimal
+    - name: humidity_pct
+      description: humidity in percent.
+      data_type: decimal
+    - name: precip_accum_mm
+      description: rain accumulation in millimeters.
+      data_type: decimal
+    - name: precip_rate_mm
+      description: precipitation rate in millimeters.
+      data_type: decimal
+    - name: pressure_hpa
+      description: pressure in hecto Pascal.
+      data_type: decimal
+    - name: temperature_c
+      description: temperature in Celsius degrees.
+      data_type: decimal
+    - name: wind_direction_deg
+      description: wind direction in degrees.
+      data_type: decimal
+    - name: wind_gust_kmh
+      description: wind gust in kilometers per hour.
+      data_type: decimal
+    - name: wind_speed_kmh
+      description: wind speed in kilometers per hour.
+      data_type: decimal
