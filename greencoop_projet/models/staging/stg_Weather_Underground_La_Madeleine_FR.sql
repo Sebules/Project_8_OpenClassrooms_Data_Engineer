@@ -1,41 +1,12 @@
 -- Documents/cours Openclassrooms/Data Engineer/projet 8/greencoop_projet/models/staging/stg_Weather_Underground_La_Madeleine_FR.sql
 {{config(materialized='view')}}
     
-    -- il s'agit de détecter chaque jour d'observation
-WITH lag_data AS (
-
-    SELECT
-        ctid, -- correspond à la position de la ligne dans le fichier
-        *,
-        LAG("Time"::time) OVER ( -- Cette ligne récupère l’heure de la ligne précédente.
-            ORDER BY ctid
-        ) AS previous_time
-    FROM {{ source('weather_data','Weather_Underground_La_Madeleine_FR') }}
-),
-
-raw_data AS (
-
-    SELECT
-        *,
-        SUM(
-            CASE
-                WHEN "Time"::time < previous_time THEN 1 --Cette ligne compare l’heure actuelle avec l’heure précédente.
-                ELSE 0
-            END
-        ) OVER (
-            ORDER BY ctid
-            ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW -- Additionner les valeurs depuis la toute première ligne jusqu’à la ligne actuelle.
-        ) AS day_number
-    FROM lag_data
-
-)
-
 SELECT
     'ILAMAD25' as station_id, -- injection de l'identifiant de la station
     "UV" AS uv_index,
     -- Rafales : mph -> km/h
     ROUND(REGEXP_REPLACE("Gust", '[^0-9\.\-]', '', 'g')::NUMERIC * 1.60934, 2)  AS wind_gust_kmh,
-    (DATE '2024-10-01' + day_number::integer)::date AS observation_date,
+    "Date"::date AS observation_date,
     "Time"::time AS observation_time,
     -- Vent: passage des valeurs en degrés par cohérence avec les données officielles
     CASE LOWER("Wind")
@@ -72,4 +43,4 @@ SELECT
     -- Précipitations : inch -> mm (×25.4)
     ROUND(REGEXP_REPLACE("Precip__Rate_", '[^0-9\.\-]', '', 'g')::NUMERIC * 25.4, 2) AS precip_rate_mm,
     ROUND(REGEXP_REPLACE("Precip__Accum_", '[^0-9\.\-]', '', 'g')::NUMERIC * 25.4, 2) AS precip_accum_mm
-FROM raw_data
+FROM {{ source('weather_data','Weather_Underground_La_Madeleine_FR') }}
