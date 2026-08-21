@@ -1,0 +1,14 @@
+timestamp,message
+1786831141745,[0m21:59:01  Running with dbt=1.12.2
+1786831142341,Serving docs at 8081
+1786831142341,"To access from your browser, navigate to: http://localhost:8081"
+1786831142341,Press Ctrl+C to exit.
+1786831386280,"88.187.43.45 - - [15/Aug/2026 22:03:06] ""GET / HTTP/1.1"" 200 -"
+1786831391903,"88.187.43.45 - - [15/Aug/2026 22:03:11] ""GET /manifest.json?cb=1786831394228 HTTP/1.1"" 200 -"
+1786831392703,"88.187.43.45 - - [15/Aug/2026 22:03:12] ""GET /catalog.json?cb=1786831394228 HTTP/1.1"" 200 -"
+1786831392704,"88.187.43.45 - - [15/Aug/2026 22:03:12] code 404, message File not found"
+1786831392704,"88.187.43.45 - - [15/Aug/2026 22:03:12] ""GET /$%7Brequire('./assets/favicons/favicon.ico')%7D HTTP/1.1"" 404 -"
+1786831393518,"88.187.43.45 - - [15/Aug/2026 22:03:13] code 404, message File not found"
+1786831393518,"88.187.43.45 - - [15/Aug/2026 22:03:13] ""GET /%7B%7B%20getIcon(item.type,%20'off')%20%7D%7D HTTP/1.1"" 404 -"
+1786831393519,"88.187.43.45 - - [15/Aug/2026 22:03:13] code 404, message File not found"
+1786831393519,"88.187.43.45 - - [15/Aug/2026 22:03:13] ""GET /%7B%7B%20getIcon(item.type,%20'on')%20%7D%7D HTTP/1.1"" 404 -"

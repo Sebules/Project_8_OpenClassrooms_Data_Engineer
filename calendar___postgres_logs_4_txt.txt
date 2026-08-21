@@ -1,0 +1,320 @@
+>> ATTEMPT 1/1
+
+2026-08-14 20:01:35 info APPLY Stage: BUILD — (workloadId=7a0b1143-ad6e-4876-9a14-0d24a890aed5_4_0_check)
+2026-08-14 20:01:35 info APPLY Stage: CLAIM — (workloadId=7a0b1143-ad6e-4876-9a14-0d24a890aed5_4_0_check)
+2026-08-14 20:01:35 info Claimed: true for workload 7a0b1143-ad6e-4876-9a14-0d24a890aed5_4_0_check via API in dataplane 0353690b-b1ee-4f55-98d6-1abae4c702b9 (485bb0e7-39be-488e-a640-09918b648787)
+2026-08-14 20:01:35 info APPLY Stage: LOAD_SHED — (workloadId=7a0b1143-ad6e-4876-9a14-0d24a890aed5_4_0_check)
+2026-08-14 20:01:35 info APPLY Stage: CHECK_STATUS — (workloadId=7a0b1143-ad6e-4876-9a14-0d24a890aed5_4_0_check)
+2026-08-14 20:01:35 info No pod found running for workload 7a0b1143-ad6e-4876-9a14-0d24a890aed5_4_0_check
+2026-08-14 20:01:35 info APPLY Stage: MUTEX — (workloadId=7a0b1143-ad6e-4876-9a14-0d24a890aed5_4_0_check)
+2026-08-14 20:01:35 info No mutex key specified for workload: 7a0b1143-ad6e-4876-9a14-0d24a890aed5_4_0_check. Continuing...
+2026-08-14 20:01:35 info APPLY Stage: ARCHITECTURE — (workloadId=7a0b1143-ad6e-4876-9a14-0d24a890aed5_4_0_check)
+2026-08-14 20:01:35 info APPLY Stage: LAUNCH — (workloadId=7a0b1143-ad6e-4876-9a14-0d24a890aed5_4_0_check)
+2026-08-14 20:01:35 info [initContainer] image: airbyte/workload-init-container:2.1.1 resources: ResourceRequirements(claims=[], limits={}, requests={}, additionalProperties={})
+2026-08-14 20:01:42 info Attempting to update workload: 7a0b1143-ad6e-4876-9a14-0d24a890aed5_4_0_check to LAUNCHED.
+2026-08-14 20:01:42 info Pipeline completed for workload: 7a0b1143-ad6e-4876-9a14-0d24a890aed5_4_0_check.
+2026-08-14 20:01:47 info 
+2026-08-14 20:01:47 info Transitioning workload to running state
+2026-08-14 20:01:47 info ----- START CHECK -----
+2026-08-14 20:01:47 info 
+2026-08-14 20:01:47 info Workload successfully transitioned to running state
+2026-08-14 20:01:51 info Connector exited, processing output
+2026-08-14 20:01:51 info Output file jobOutput.json found
+2026-08-14 20:01:51 info Connector exited with exit code 0
+2026-08-14 20:01:51 info Reading messages from protocol version 0.2.0
+2026-08-14 20:01:51 info TransportParams: None
+2026-08-14 20:01:51 info Check succeeded
+2026-08-14 20:01:51 info Checking for optional control message...
+2026-08-14 20:01:51 info Writing output of 7a0b1143-ad6e-4876-9a14-0d24a890aed5_4_0_check to the doc store
+2026-08-14 20:01:51 info Marking workload 7a0b1143-ad6e-4876-9a14-0d24a890aed5_4_0_check as successful
+2026-08-14 20:01:54 info 
+2026-08-14 20:01:54 info Deliberately exiting process with code 0.
+2026-08-14 20:01:54 info ----- END CHECK -----
+2026-08-14 20:01:54 info 
+2026-08-14 20:01:56 info APPLY Stage: BUILD — (workloadId=9de00c1f-2414-4da6-9f66-3594519cd831_4_0_check)
+2026-08-14 20:01:56 info APPLY Stage: CLAIM — (workloadId=9de00c1f-2414-4da6-9f66-3594519cd831_4_0_check)
+2026-08-14 20:01:56 info Claimed: true for workload 9de00c1f-2414-4da6-9f66-3594519cd831_4_0_check via API in dataplane 0353690b-b1ee-4f55-98d6-1abae4c702b9 (485bb0e7-39be-488e-a640-09918b648787)
+2026-08-14 20:01:56 info APPLY Stage: LOAD_SHED — (workloadId=9de00c1f-2414-4da6-9f66-3594519cd831_4_0_check)
+2026-08-14 20:01:56 info APPLY Stage: CHECK_STATUS — (workloadId=9de00c1f-2414-4da6-9f66-3594519cd831_4_0_check)
+2026-08-14 20:01:56 info No pod found running for workload 9de00c1f-2414-4da6-9f66-3594519cd831_4_0_check
+2026-08-14 20:01:56 info APPLY Stage: MUTEX — (workloadId=9de00c1f-2414-4da6-9f66-3594519cd831_4_0_check)
+2026-08-14 20:01:56 info No mutex key specified for workload: 9de00c1f-2414-4da6-9f66-3594519cd831_4_0_check. Continuing...
+2026-08-14 20:01:56 info APPLY Stage: ARCHITECTURE — (workloadId=9de00c1f-2414-4da6-9f66-3594519cd831_4_0_check)
+2026-08-14 20:01:56 info APPLY Stage: LAUNCH — (workloadId=9de00c1f-2414-4da6-9f66-3594519cd831_4_0_check)
+2026-08-14 20:01:56 info [initContainer] image: airbyte/workload-init-container:2.1.1 resources: ResourceRequirements(claims=[], limits={}, requests={}, additionalProperties={})
+2026-08-14 20:02:04 info Attempting to update workload: 9de00c1f-2414-4da6-9f66-3594519cd831_4_0_check to LAUNCHED.
+2026-08-14 20:02:04 info Pipeline completed for workload: 9de00c1f-2414-4da6-9f66-3594519cd831_4_0_check.
+2026-08-14 20:02:09 info 
+2026-08-14 20:02:09 info Transitioning workload to running state
+2026-08-14 20:02:09 info ----- START CHECK -----
+2026-08-14 20:02:09 info 
+2026-08-14 20:02:10 info Workload successfully transitioned to running state
+2026-08-14 20:02:10 info Connector exited, processing output
+2026-08-14 20:02:10 info Output file jobOutput.json found
+2026-08-14 20:02:10 info Connector exited with exit code 0
+2026-08-14 20:02:10 info Reading messages from protocol version 0.2.0
+2026-08-14 20:02:10 info Malformed non-Airbyte record (connectionId = not present): 2026-08-14T18:02:05.505264537Z main WARN for URI classpath:AirbyteLogMessageTemplate.json found 2 resources, using the first one: jar:file:/airbyte/lib/io.airbyte.airbyte-cdk.java.airbyte-cdk-airbyte-cdk-core-0.48.18.jar!/AirbyteLogMessageTemplate.json
+2026-08-14 20:02:10 info INFO main i.m.c.e.DefaultEnvironment(<init>):168 Established active environments: [k8s, cloud, cli, destination, connector]
+2026-08-14 20:02:10 info INFO main c.z.h.HikariDataSource(<init>):79 HikariPool-1 - Starting...
+2026-08-14 20:02:10 info INFO main c.z.h.HikariDataSource(<init>):81 HikariPool-1 - Start completed.
+2026-08-14 20:02:10 info INFO main i.a.c.AirbyteConnectorRunnable(run):35 Executing class io.airbyte.cdk.load.check.CheckOperation operation.
+2026-08-14 20:02:10 info INFO main i.a.i.d.p.c.PostgresAirbyteClient(execute):453 CREATE SCHEMA IF NOT EXISTS "raw";
+2026-08-14 20:02:10 info INFO main i.a.i.d.p.c.PostgresAirbyteClient(execute):453             BEGIN TRANSACTION;
+            DROP TABLE IF EXISTS "raw"."_airbyte_connection_test_aa7c834049f744f783a72eb48e6f9dac";
+            CREATE TABLE IF NOT EXISTS "raw"."_airbyte_connection_test_aa7c834049f744f783a72eb48e6f9dac" (
+                "_airbyte_raw_id" varchar NOT NULL,
+"_airbyte_extracted_at" timestamp with time zone NOT NULL,
+"_airbyte_meta" jsonb NOT NULL,
+"_airbyte_generation_id" bigint NOT NULL
+            );
+            COMMIT;
+2026-08-14 20:02:10 info INFO main i.a.i.d.p.c.PostgresAirbyteClient(execute):453 
+
+CREATE INDEX IF NOT EXISTS "idx_extracted_at__airbyte_connection_test_aa7c834049f744f783a72eb48e6f9dac" ON "raw"."_airbyte_connection_test_aa7c834049f744f783a72eb48e6f9dac" ("_airbyte_extracted_at");
+2026-08-14 20:02:10 info INFO main i.a.i.d.p.c.PostgresAirbyteClient(executeQuery):489 SELECT column_name, data_type, is_nullable
+FROM information_schema.columns
+WHERE table_schema = 'raw'
+AND table_name = '_airbyte_connection_test_aa7c834049f744f783a72eb48e6f9dac'
+ORDER BY ordinal_position;
+2026-08-14 20:02:10 info INFO main i.a.i.d.p.w.l.PostgresInsertBuffer(flush):58 Beginning insert into raw._airbyte_connection_test_aa7c834049f744f783a72eb48e6f9dac
+2026-08-14 20:02:10 info INFO main i.a.i.d.p.w.l.PostgresInsertBuffer(flush):61 Finished insert of 1 row(s) into raw._airbyte_connection_test_aa7c834049f744f783a72eb48e6f9dac
+2026-08-14 20:02:10 info INFO main i.a.i.d.p.c.PostgresAirbyteClient(executeQuery):489 SELECT COUNT(*) AS "total" FROM "raw"."_airbyte_connection_test_aa7c834049f744f783a72eb48e6f9dac";
+2026-08-14 20:02:10 info INFO main i.a.i.d.p.c.PostgresAirbyteClient(execute):453 DROP TABLE IF EXISTS "raw"."_airbyte_connection_test_aa7c834049f744f783a72eb48e6f9dac";
+2026-08-14 20:02:10 info INFO main i.a.c.AirbyteConnectorRunnable(run):47 Flushing output consumer prior to shutdown.
+2026-08-14 20:02:10 info INFO main i.a.c.AirbyteConnectorRunnable(run):49 Completed integration: airbyte/destination-postgres.
+2026-08-14 20:02:10 info Checking for optional control message...
+2026-08-14 20:02:10 info Writing output of 9de00c1f-2414-4da6-9f66-3594519cd831_4_0_check to the doc store
+2026-08-14 20:02:11 info Marking workload 9de00c1f-2414-4da6-9f66-3594519cd831_4_0_check as successful
+2026-08-14 20:02:11 info 
+2026-08-14 20:02:11 info Deliberately exiting process with code 0.
+2026-08-14 20:02:11 info ----- END CHECK -----
+2026-08-14 20:02:11 info 
+2026-08-14 20:02:12 info APPLY Stage: BUILD — (workloadId=7a0b1143-ad6e-4876-9a14-0d24a890aed5_1786665600000_discover)
+2026-08-14 20:02:12 info APPLY Stage: CLAIM — (workloadId=7a0b1143-ad6e-4876-9a14-0d24a890aed5_1786665600000_discover)
+2026-08-14 20:02:12 info Claimed: true for workload 7a0b1143-ad6e-4876-9a14-0d24a890aed5_1786665600000_discover via API in dataplane 0353690b-b1ee-4f55-98d6-1abae4c702b9 (485bb0e7-39be-488e-a640-09918b648787)
+2026-08-14 20:02:12 info APPLY Stage: LOAD_SHED — (workloadId=7a0b1143-ad6e-4876-9a14-0d24a890aed5_1786665600000_discover)
+2026-08-14 20:02:12 info APPLY Stage: CHECK_STATUS — (workloadId=7a0b1143-ad6e-4876-9a14-0d24a890aed5_1786665600000_discover)
+2026-08-14 20:02:12 info No pod found running for workload 7a0b1143-ad6e-4876-9a14-0d24a890aed5_1786665600000_discover
+2026-08-14 20:02:12 info APPLY Stage: MUTEX — (workloadId=7a0b1143-ad6e-4876-9a14-0d24a890aed5_1786665600000_discover)
+2026-08-14 20:02:12 info No mutex key specified for workload: 7a0b1143-ad6e-4876-9a14-0d24a890aed5_1786665600000_discover. Continuing...
+2026-08-14 20:02:12 info APPLY Stage: ARCHITECTURE — (workloadId=7a0b1143-ad6e-4876-9a14-0d24a890aed5_1786665600000_discover)
+2026-08-14 20:02:12 info APPLY Stage: LAUNCH — (workloadId=7a0b1143-ad6e-4876-9a14-0d24a890aed5_1786665600000_discover)
+2026-08-14 20:02:12 info [initContainer] image: airbyte/workload-init-container:2.1.1 resources: ResourceRequirements(claims=[], limits={}, requests={}, additionalProperties={})
+2026-08-14 20:02:20 info Attempting to update workload: 7a0b1143-ad6e-4876-9a14-0d24a890aed5_1786665600000_discover to LAUNCHED.
+2026-08-14 20:02:20 info Pipeline completed for workload: 7a0b1143-ad6e-4876-9a14-0d24a890aed5_1786665600000_discover.
+2026-08-14 20:02:24 info 
+2026-08-14 20:02:24 info Transitioning workload to running state
+2026-08-14 20:02:25 info ----- START DISCOVER -----
+2026-08-14 20:02:25 info 
+2026-08-14 20:02:25 info Workload successfully transitioned to running state
+2026-08-14 20:02:28 info Connector exited, processing output
+2026-08-14 20:02:28 info Output file jobOutput.json found
+2026-08-14 20:02:28 info Connector exited with exit code 0
+2026-08-14 20:02:28 info Reading messages from protocol version 0.2.0
+2026-08-14 20:02:28 info Discovering schema of Calendar at https://raw.githubusercontent.com/Sebules/Project_8_OpenClassrooms_Data_Engineer/refs/heads/main/donnees/Calendar.csv...
+2026-08-14 20:02:28 info TransportParams: None
+2026-08-14 20:02:28 info Checking for optional control message...
+2026-08-14 20:02:28 info Writing catalog result to API...
+2026-08-14 20:02:28 info Finished writing catalog result to API.
+2026-08-14 20:02:28 info Writing output of 7a0b1143-ad6e-4876-9a14-0d24a890aed5_1786665600000_discover to the doc store
+2026-08-14 20:02:28 info Marking workload 7a0b1143-ad6e-4876-9a14-0d24a890aed5_1786665600000_discover as successful
+2026-08-14 20:02:28 info 
+2026-08-14 20:02:28 info Deliberately exiting process with code 0.
+2026-08-14 20:02:28 info ----- END DISCOVER -----
+2026-08-14 20:02:28 info 
+2026-08-14 20:02:30 info APPLY Stage: BUILD — (workloadId=8893cc6c-956a-474f-b4c0-eb066916b889_4_0_sync)
+2026-08-14 20:02:31 info APPLY Stage: CLAIM — (workloadId=8893cc6c-956a-474f-b4c0-eb066916b889_4_0_sync)
+2026-08-14 20:02:31 info Claimed: true for workload 8893cc6c-956a-474f-b4c0-eb066916b889_4_0_sync via API in dataplane 0353690b-b1ee-4f55-98d6-1abae4c702b9 (485bb0e7-39be-488e-a640-09918b648787)
+2026-08-14 20:02:31 info APPLY Stage: LOAD_SHED — (workloadId=8893cc6c-956a-474f-b4c0-eb066916b889_4_0_sync)
+2026-08-14 20:02:31 info APPLY Stage: CHECK_STATUS — (workloadId=8893cc6c-956a-474f-b4c0-eb066916b889_4_0_sync)
+2026-08-14 20:02:31 info No pod found running for workload 8893cc6c-956a-474f-b4c0-eb066916b889_4_0_sync
+2026-08-14 20:02:31 info APPLY Stage: MUTEX — (workloadId=8893cc6c-956a-474f-b4c0-eb066916b889_4_0_sync)
+2026-08-14 20:02:31 info Mutex key: 8893cc6c-956a-474f-b4c0-eb066916b889 specified for workload: 8893cc6c-956a-474f-b4c0-eb066916b889_4_0_sync. Attempting to delete existing pods...
+2026-08-14 20:02:31 info Mutex key: 8893cc6c-956a-474f-b4c0-eb066916b889 specified for workload: 8893cc6c-956a-474f-b4c0-eb066916b889_4_0_sync found no existing pods. Continuing...
+2026-08-14 20:02:31 info APPLY Stage: ARCHITECTURE — (workloadId=8893cc6c-956a-474f-b4c0-eb066916b889_4_0_sync)
+2026-08-14 20:02:31 info Building STDIO environment: source IPC options missing
+2026-08-14 20:02:31 info APPLY Stage: LAUNCH — (workloadId=8893cc6c-956a-474f-b4c0-eb066916b889_4_0_sync)
+2026-08-14 20:02:31 info [initContainer] image: airbyte/workload-init-container:2.1.1 resources: ResourceRequirements(claims=[], limits={memory=2Gi, cpu=1}, requests={memory=2Gi, cpu=1}, additionalProperties={})
+2026-08-14 20:02:31 info Launching replication pod: replication-job-4-attempt-0 (selectors = {}) with containers:
+2026-08-14 20:02:31 info [source] image: airbyte/source-file:0.6.0 resources: ResourceRequirements(claims=[], limits={memory=2Gi, cpu=1}, requests={memory=1Gi, cpu=0.5}, additionalProperties={})
+2026-08-14 20:02:31 info [destination] image: airbyte/destination-postgres:3.0.16 resources: ResourceRequirements(claims=[], limits={memory=2Gi, cpu=1}, requests={memory=1Gi, cpu=0.5}, additionalProperties={})
+2026-08-14 20:02:31 info [orchestrator] image: airbyte/container-orchestrator:2.1.1 resources: ResourceRequirements(claims=[], limits={memory=2Gi, cpu=1}, requests={memory=2Gi, cpu=1}, additionalProperties={})
+2026-08-14 20:07:00 info Attempting to update workload: 8893cc6c-956a-474f-b4c0-eb066916b889_4_0_sync to LAUNCHED.
+2026-08-14 20:07:00 info Pipeline completed for workload: 8893cc6c-956a-474f-b4c0-eb066916b889_4_0_sync.
+2026-08-14 20:07:14 info Running replication worker...
+2026-08-14 20:07:14 info Starting replication worker. job id: 4 attempt: 0
+2026-08-14 20:07:14 info 
+2026-08-14 20:07:14 info ----- START REPLICATION -----
+2026-08-14 20:07:14 info 
+2026-08-14 20:07:14 info Running destination...
+2026-08-14 20:07:14 info Writing messages to protocol version 0.2.0
+2026-08-14 20:07:14 info Reading messages from protocol version 0.2.0
+2026-08-14 20:07:14 info Reading messages from protocol version 0.2.0
+2026-08-14 20:07:14 info SourceReader started.
+2026-08-14 20:07:14 info MessageProcessor started.
+2026-08-14 20:07:14 info DestinationWriter started.
+2026-08-14 20:07:14 info DestinationReader started.
+2026-08-14 20:07:14 info Starting workload heartbeat (interval=10s; timeout=600s)
+2026-08-14 20:07:14 info Transitioning workload to running state
+2026-08-14 20:07:14 info Malformed non-Airbyte record (connectionId = 8893cc6c-956a-474f-b4c0-eb066916b889): 2026-08-14T18:07:14.716058697Z main WARN for URI classpath:AirbyteLogMessageTemplate.json found 2 resources, using the first one: jar:file:/airbyte/lib/io.airbyte.airbyte-cdk.java.airbyte-cdk-airbyte-cdk-core-0.48.18.jar!/AirbyteLogMessageTemplate.json
+2026-08-14 20:07:15 info Workload successfully transitioned to running state
+2026-08-14 20:07:17 info INFO main i.m.c.e.DefaultEnvironment(<init>):168 Established active environments: [k8s, cloud, cli, destination, connector]
+2026-08-14 20:07:20 warn WARN main c.k.j.j.JsonSchemaGenerator$MyJsonFormatVisitorWrapper(expectAnyFormat):725 Not able to generate jsonSchema-info for type: [simple type, class com.fasterxml.jackson.databind.JsonNode] - probably using custom serializer which does not override acceptJsonFormatVisitor
+2026-08-14 20:07:20 info INFO main i.a.c.l.c.NamespaceMappingBeanFactory(dataChannelMedium):26 Using data channel medium STDIO
+2026-08-14 20:07:20 info INFO main i.a.c.l.c.NamespaceMappingBeanFactory(namespaceMapper):38 Going to use the given source value: SOURCE for namespace
+2026-08-14 20:07:21 info INFO main i.a.c.l.c.DestinationCatalog(<init>):52 Destination catalog initialized: [DestinationStream(unmappedNamespace=null, unmappedName=Calendar, generationId=1, minimumGenerationId=1, syncId=4, namespaceMapper=io.airbyte.cdk.load.command.NamespaceMapper@25add5cf, tableSchema=StreamTableSchema(tableNames=TableNames(rawTableName=null, tempTableName=TableName(namespace=raw, name=rawCalendaradd3bc7bf6c7c93188a1af3e052028a6), finalTableName=TableName(namespace=raw, name=Calendar)), columnSchema=ColumnSchema(inputSchema={day=FieldType(type=NumberType, nullable=true), year=FieldType(type=NumberType, nullable=true), month=FieldType(type=NumberType, nullable=true), observation_date=FieldType(type=StringType, nullable=true)}, inputToFinalColumnNames={day=day, year=year, month=month, observation_date=observation_date}, finalSchema={day=ColumnType(type=decimal, nullable=true), year=ColumnType(type=decimal, nullable=true), month=ColumnType(type=decimal, nullable=true), observation_date=ColumnType(type=varchar, nullable=true)}), importType=Append))]
+2026-08-14 20:07:21 info INFO main c.z.h.HikariDataSource(<init>):79 HikariPool-1 - Starting...
+2026-08-14 20:07:21 info INFO main c.z.h.HikariDataSource(<init>):81 HikariPool-1 - Start completed.
+2026-08-14 20:07:21 info INFO main i.a.c.AirbyteConnectorRunnable(run):35 Executing class io.airbyte.cdk.load.write.WriteOperation operation.
+2026-08-14 20:07:21 info INFO main i.a.c.l.w.WriteOperation(execute):21 Running destination write...
+2026-08-14 20:07:21 info INFO main i.a.c.l.d.DestinationLifecycle$initializeDestination$1(invokeSuspend):51 Initializing the destination
+2026-08-14 20:07:21 info INFO main i.a.i.d.p.c.PostgresAirbyteClient(execute):453 CREATE SCHEMA IF NOT EXISTS "raw";
+2026-08-14 20:07:22 error CryptographyDeprecationWarning: TripleDES has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.TripleDES and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+2026-08-14 20:07:22 error CryptographyDeprecationWarning: TripleDES has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.TripleDES and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+2026-08-14 20:07:22 info INFO main i.a.i.d.p.c.PostgresAirbyteClient(execute):453 CREATE SCHEMA IF NOT EXISTS "raw";
+2026-08-14 20:07:22 info INFO main i.a.i.d.p.c.PostgresAirbyteClient(executeQuery):489 SELECT COUNT(*) AS "total" FROM "raw"."Calendar";
+2026-08-14 20:07:22 info INFO main i.a.i.d.p.c.PostgresAirbyteClient(executeQuery):489 SELECT COUNT(*) AS "total" FROM "raw"."rawCalendaradd3bc7bf6c7c93188a1af3e052028a6";
+2026-08-14 20:07:22 info INFO main i.a.c.l.d.DestinationLifecycle$initializeDestination$1(invokeSuspend):53 Destination initialized
+2026-08-14 20:07:22 info INFO DefaultDispatcher-worker-1 i.a.c.l.d.DestinationLifecycle$initializeIndividualStreams$1$result$1$1(invokeSuspend):64 Starting stream loader for stream null:Calendar
+2026-08-14 20:07:22 info INFO DefaultDispatcher-worker-1 i.a.c.l.t.d.DirectLoadTableAppendTruncateStreamLoader(start):170 AppendTruncateStreamLoader starting for stream Calendar
+2026-08-14 20:07:22 info INFO DefaultDispatcher-worker-1 i.a.c.l.t.d.DirectLoadTableAppendTruncateStreamLoader(start):204 Creating new real table: raw.Calendar for stream Calendar
+2026-08-14 20:07:22 info INFO DefaultDispatcher-worker-1 i.a.i.d.p.c.PostgresAirbyteClient(execute):453             BEGIN TRANSACTION;
+            DROP TABLE IF EXISTS "raw"."Calendar";
+            CREATE TABLE IF NOT EXISTS "raw"."Calendar" (
+                "_airbyte_raw_id" varchar NOT NULL,
+"_airbyte_extracted_at" timestamp with time zone NOT NULL,
+"_airbyte_meta" jsonb NOT NULL,
+"_airbyte_generation_id" bigint NOT NULL,
+"day" decimal,
+"year" decimal,
+"month" decimal,
+"observation_date" varchar
+            );
+            COMMIT;
+2026-08-14 20:07:22 info INFO DefaultDispatcher-worker-1 i.a.i.d.p.c.PostgresAirbyteClient(execute):453 
+
+CREATE INDEX IF NOT EXISTS "idx_extracted_at_Calendar" ON "raw"."Calendar" ("_airbyte_extracted_at");
+2026-08-14 20:07:22 info INFO DefaultDispatcher-worker-1 i.a.c.l.t.d.DirectLoadTableAppendTruncateStreamLoader(start):236 Target table: raw.Calendar for stream Calendar
+2026-08-14 20:07:22 info INFO DefaultDispatcher-worker-1 i.a.c.l.d.DestinationLifecycle$initializeIndividualStreams$1$result$1$1(invokeSuspend):69 Stream loader for stream null:Calendar started
+2026-08-14 20:07:22 info INFO main i.a.c.l.d.p.PipelineRunner(run):40 Destination Pipeline Starting...
+2026-08-14 20:07:22 info INFO main i.a.c.l.d.p.PipelineRunner(run):42 Starting state reconciler...
+2026-08-14 20:07:22 info INFO main i.a.c.l.d.p.PipelineRunner(run):45 Starting 1 pipelines...
+2026-08-14 20:07:22 info Syncing stream: Calendar (https://raw.githubusercontent.com/Sebules/Project_8_OpenClassrooms_Data_Engineer/refs/heads/main/donnees/Calendar.csv)...
+2026-08-14 20:07:22 info TransportParams: None
+2026-08-14 20:07:22 info Marking stream Calendar as RUNNING
+2026-08-14 20:07:22 info Stream status TRACE received of status: STARTED for stream Calendar
+2026-08-14 20:07:22 info Sending update for Calendar - null -> RUNNING
+2026-08-14 20:07:22 info Marking stream Calendar as STOPPED
+2026-08-14 20:07:22 info Stream completed: null.Calendar
+2026-08-14 20:07:22 info Current stream completion status: {io.airbyte.protocol.models.v0.StreamDescriptor@1b418572[name=Calendar,namespace=<null>,additionalProperties={}]=false}
+2026-08-14 20:07:22 info Stream Status Update Received: Calendar - RUNNING
+2026-08-14 20:07:22 info Creating status: Calendar - RUNNING
+2026-08-14 20:07:23 info Stream status TRACE received of status: RUNNING for stream Calendar
+2026-08-14 20:07:23 info Stream status TRACE received of status: COMPLETE for stream Calendar
+2026-08-14 20:07:23 info Total records read: (641 bytes)
+2026-08-14 20:07:23 info Schema validation was performed to a max of 10 records with errors per stream.
+2026-08-14 20:07:23 info SourceReader finished.
+2026-08-14 20:07:23 info Source queue closed — stopping message processor...
+2026-08-14 20:07:23 info MessageProcessor finished.
+2026-08-14 20:07:23 info DestinationWriter finished.
+2026-08-14 20:07:23 info INFO pool-2-thread-1 i.a.i.d.p.c.PostgresAirbyteClient(executeQuery):489 SELECT column_name, data_type, is_nullable
+FROM information_schema.columns
+WHERE table_schema = 'raw'
+AND table_name = 'Calendar'
+ORDER BY ordinal_position;
+2026-08-14 20:07:23 info INFO DefaultDispatcher-worker-3 i.a.c.l.d.i.JsonDestinationMessageInputFlow$collect$4(invokeSuspend):47 Input stream reader closed.
+2026-08-14 20:07:23 info INFO pool-2-thread-1 i.a.c.l.d.i.JsonDestinationMessageInputFlow(collect):51 Finished reading input.
+2026-08-14 20:07:23 info INFO pool-2-thread-1 i.a.c.l.d.i.DataFlowPipelineInputFlow(collect):58 Finished routing input.
+2026-08-14 20:07:23 info INFO DefaultDispatcher-worker-3 i.a.c.l.d.p.PipelineCompletionHandler$apply$2(invokeSuspend):33 Flushing 1 final aggregates...
+2026-08-14 20:07:23 info INFO DefaultDispatcher-worker-3 i.a.i.d.p.w.l.PostgresInsertBuffer(flush):58 Beginning insert into raw.Calendar
+2026-08-14 20:07:23 info INFO DefaultDispatcher-worker-3 i.a.i.d.p.w.l.PostgresInsertBuffer(flush):61 Finished insert of 10 row(s) into raw.Calendar
+2026-08-14 20:07:23 info INFO DefaultDispatcher-worker-3 i.a.c.l.d.p.PipelineCompletionHandler$apply$2(invokeSuspend):48 Final aggregates flushed.
+2026-08-14 20:07:23 info INFO main i.a.c.l.d.p.PipelineRunner(run):47 Individual pipelines complete...
+2026-08-14 20:07:23 info INFO main i.a.c.l.d.p.PipelineRunner(run):51 Disabling state reconciler...
+2026-08-14 20:07:23 info INFO main i.a.c.l.d.p.PipelineRunner(run):64 Flushing final states...
+2026-08-14 20:07:24 info Destination complete for Calendar
+2026-08-14 20:07:24 info Sending update for Calendar - RUNNING -> COMPLETE
+2026-08-14 20:07:24 info Stream Status Update Received: Calendar - COMPLETE
+2026-08-14 20:07:24 info Updating status: Calendar - COMPLETE
+2026-08-14 20:07:24 info INFO main i.a.c.l.d.p.PipelineRunner(run):75 Destination Pipeline Completed — Successfully
+2026-08-14 20:07:24 info INFO DefaultDispatcher-worker-3 i.a.c.l.d.DestinationLifecycle$finalizeIndividualStreams$2$1$1(invokeSuspend):93 Finalizing stream null:Calendar
+2026-08-14 20:07:24 info INFO DefaultDispatcher-worker-3 i.a.c.l.d.DestinationLifecycle$finalizeIndividualStreams$2$1$1(invokeSuspend):97 Finalized stream null:Calendar
+2026-08-14 20:07:24 info INFO main i.a.c.l.d.DestinationLifecycle$teardownDestination$1(invokeSuspend):108 Tearing down the destination
+2026-08-14 20:07:24 info INFO main i.a.c.l.d.DestinationLifecycle$teardownDestination$1(invokeSuspend):110 Destination torn down
+2026-08-14 20:07:24 info INFO main i.a.c.l.w.WriteOperation(execute):23 Destination write complete.
+2026-08-14 20:07:24 info INFO main i.a.c.AirbyteConnectorRunnable(run):47 Flushing output consumer prior to shutdown.
+2026-08-14 20:07:24 info INFO main i.a.c.AirbyteConnectorRunnable(run):49 Completed integration: airbyte/destination-postgres.
+2026-08-14 20:07:24 info DestinationReader finished.
+2026-08-14 20:07:24 info Closing StateCheckSumCountEventHandler
+2026-08-14 20:07:24 info No checksum errors were reported in the entire sync.
+2026-08-14 20:07:24 info Sync summary: {
+  "status" : "completed",
+  "recordsSynced" : 10,
+  "bytesSynced" : 641,
+  "startTime" : 1786730833609,
+  "endTime" : 1786730844695,
+  "totalStats" : {
+    "additionalStats" : { },
+    "bytesCommitted" : 641,
+    "bytesEmitted" : 641,
+    "destinationStateMessagesEmitted" : 1,
+    "destinationWriteEndTime" : 1786730844340,
+    "destinationWriteStartTime" : 1786730834411,
+    "meanSecondsBeforeSourceStateMessageEmitted" : 0,
+    "maxSecondsBeforeSourceStateMessageEmitted" : 1,
+    "maxSecondsBetweenStateMessageEmittedandCommitted" : 1,
+    "meanSecondsBetweenStateMessageEmittedandCommitted" : 1,
+    "recordsEmitted" : 10,
+    "recordsCommitted" : 10,
+    "recordsFilteredOut" : 0,
+    "bytesFilteredOut" : 0,
+    "replicationEndTime" : 1786730844386,
+    "replicationStartTime" : 1786730833609,
+    "sourceReadEndTime" : 1786730843104,
+    "sourceReadStartTime" : 1786730834411,
+    "sourceStateMessagesEmitted" : 1
+  },
+  "streamStats" : [ {
+    "streamName" : "Calendar",
+    "stats" : {
+      "additionalStats" : {
+        "truncatedValueCount" : 0.0,
+        "nulledValueCount" : 0.0,
+        "sourceFieldsPopulated" : 40
+      },
+      "bytesCommitted" : 641,
+      "bytesEmitted" : 641,
+      "estimatedBytes" : 0,
+      "estimatedRecords" : 0,
+      "recordsEmitted" : 10,
+      "recordsCommitted" : 10,
+      "recordsFilteredOut" : 0,
+      "bytesFilteredOut" : 0
+    }
+  } ],
+  "performanceMetrics" : { },
+  "streamCount" : 1
+}
+2026-08-14 20:07:24 info Failures: [ ]
+2026-08-14 20:07:24 info 
+2026-08-14 20:07:24 info Closing io.micronaut.context.propagation.instrument.execution.ContextPropagatingExecutorService@193d73d3
+2026-08-14 20:07:24 info ----- END REPLICATION -----
+2026-08-14 20:07:24 info 
+2026-08-14 20:07:24 info Closing io.micronaut.context.propagation.instrument.execution.ContextPropagatingExecutorService@5cb4ba80
+2026-08-14 20:07:24 info Closing io.airbyte.container.orchestrator.worker.io.LocalContainerAirbyteDestination@978475b
+2026-08-14 20:07:24 info Closing io.airbyte.container.orchestrator.worker.io.LocalContainerAirbyteSource@a4e1ca7
+2026-08-14 20:07:24 info Closing io.airbyte.container.orchestrator.worker.RecordSchemaValidator@7d466ef9
+2026-08-14 20:07:24 info Closing io.airbyte.container.orchestrator.persistence.SyncPersistenceImpl@4a561f7d
+2026-08-14 20:07:25 info Returning output...
+2026-08-14 20:07:26 info 
+----- START POST REPLICATION OPERATIONS -----
+
+
+2026-08-14 20:07:27 info No post-replication operation(s) to perform.
+2026-08-14 20:07:27 info 
+----- END POST REPLICATION OPERATIONS -----
+
+
+
+
+

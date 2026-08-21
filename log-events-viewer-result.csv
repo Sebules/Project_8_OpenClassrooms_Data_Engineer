@@ -1,0 +1,95 @@
+timestamp,message
+1787305962074,[0m09:52:42  Running with dbt=1.12.3
+1787305962254,[0m09:52:42  Registered adapter: postgres=1.11.0
+1787305962463,[0m09:52:42  Unable to do partial parsing because of a version mismatch
+1787305963826,[0m09:52:43  [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+1787305963826,There are 1 unused configuration paths:
+1787305963826,'"- models.greencoop_projet.example"
+1787305964012,"[0m09:52:44  Found 10 models, 26 data tests, 2 seeds, 4 sources, 477 macros"
+1787305964015,[0m09:52:44  
+1787305964015,[0m09:52:44  Concurrency: 4 threads (target='dev')
+1787305964015,[0m09:52:44  
+1787305964150,[0m09:52:44  1 of 38 START sql view model analytics.stg_Weather_Underground_Ichtegem_BE ..... [RUN]
+1787305964151,[0m09:52:44  2 of 38 START sql view model analytics.stg_Weather_Underground_La_Madeleine_FR . [RUN]
+1787305964151,[0m09:52:44  3 of 38 START sql view model analytics.stg_calendar ............................ [RUN]
+1787305964152,[0m09:52:44  4 of 38 START sql view model analytics.stg_station_meteo_infoclimat ............ [RUN]
+1787305964309,[0m09:52:44  4 of 38 OK created sql view model analytics.stg_station_meteo_infoclimat ....... [[32mCREATE VIEW[0m in 0.15s]
+1787305964309,[0m09:52:44  1 of 38 OK created sql view model analytics.stg_Weather_Underground_Ichtegem_BE  [[32mCREATE VIEW[0m in 0.16s]
+1787305964310,[0m09:52:44  2 of 38 OK created sql view model analytics.stg_Weather_Underground_La_Madeleine_FR  [[32mCREATE VIEW[0m in 0.16s]
+1787305964312,[0m09:52:44  5 of 38 START sql view model analytics.stg_station_meteo_infoclimat_observation  [RUN]
+1787305964314,[0m09:52:44  6 of 38 START seed file analytics.metadonnees_stations_amateurs ................ [RUN]
+1787305964315,[0m09:52:44  7 of 38 START seed file analytics.time_data .................................... [RUN]
+1787305964316,[0m09:52:44  3 of 38 OK created sql view model analytics.stg_calendar ....................... [[32mCREATE VIEW[0m in 0.16s]
+1787305964353,[0m09:52:44  8 of 38 START sql table model analytics.dim_calendar ........................... [RUN]
+1787305964648,[0m09:52:44  6 of 38 OK loaded seed file analytics.metadonnees_stations_amateurs ............ [[32mINSERT 2[0m in 0.29s]
+1787305964757,[0m09:52:44  9 of 38 START sql table model analytics.dim_weather_stations ................... [RUN]
+1787305964768,[0m09:52:44  5 of 38 OK created sql view model analytics.stg_station_meteo_infoclimat_observation  [[32mCREATE VIEW[0m in 0.42s]
+1787305964891,[0m09:52:44  10 of 38 START sql view model analytics.int_weather_observations_unified ....... [RUN]
+1787305964944,[0m09:52:44  8 of 38 OK created sql table model analytics.dim_calendar ...................... [[32mINSERT 0 10[0m in 0.59s]
+1787305964945,[0m09:52:44  11 of 38 START test not_null_dim_calendar_day .................................. [RUN]
+1787305964958,[0m09:52:44  7 of 38 OK loaded seed file analytics.time_data ................................ [[32mINSERT 1440[0m in 0.64s]
+1787305964973,"[0m09:52:44  [[33mWARNING[0m]: Detected columns with numeric type and unspecified precision/scale, this can lead to unintended rounding: ['elevation']`"
+1787305964977,[0m09:52:44  12 of 38 START test not_null_dim_calendar_month ................................ [RUN]
+1787305965009,[0m09:52:45  10 of 38 OK created sql view model analytics.int_weather_observations_unified .. [[32mCREATE VIEW[0m in 0.12s]
+1787305965010,[0m09:52:45  13 of 38 START test not_null_dim_calendar_observation_date ..................... [RUN]
+1787305965051,[0m09:52:45  11 of 38 PASS not_null_dim_calendar_day ........................................ [[32mPASS[0m in 0.10s]
+1787305965052,[0m09:52:45  14 of 38 START test not_null_dim_calendar_year ................................. [RUN]
+1787305965070,[0m09:52:45  13 of 38 PASS not_null_dim_calendar_observation_date ........................... [[32mPASS[0m in 0.06s]
+1787305965072,[0m09:52:45  15 of 38 START test unique_dim_calendar_observation_date ....................... [RUN]
+1787305965099,[0m09:52:45  12 of 38 PASS not_null_dim_calendar_month ...................................... [[32mPASS[0m in 0.12s]
+1787305965101,[0m09:52:45  16 of 38 START sql table model analytics.dim_time .............................. [RUN]
+1787305965117,[0m09:52:45  14 of 38 PASS not_null_dim_calendar_year ....................................... [[32mPASS[0m in 0.06s]
+1787305965130,[0m09:52:45  15 of 38 PASS unique_dim_calendar_observation_date ............................. [[32mPASS[0m in 0.06s]
+1787305965135,[0m09:52:45  9 of 38 OK created sql table model analytics.dim_weather_stations .............. [[32mINSERT 0 6[0m in 0.35s]
+1787305965136,[0m09:52:45  17 of 38 START test accepted_values_dim_weather_stations_station_type__amateur__officielle  [RUN]
+1787305965137,[0m09:52:45  18 of 38 START test not_null_dim_weather_stations_latitude ..................... [RUN]
+1787305965138,[0m09:52:45  19 of 38 START test not_null_dim_weather_stations_longitude .................... [RUN]
+1787305965211,[0m09:52:45  18 of 38 PASS not_null_dim_weather_stations_latitude ........................... [[32mPASS[0m in 0.07s]
+1787305965212,[0m09:52:45  17 of 38 PASS accepted_values_dim_weather_stations_station_type__amateur__officielle  [[32mPASS[0m in 0.07s]
+1787305965213,[0m09:52:45  20 of 38 START test not_null_dim_weather_stations_station_id ................... [RUN]
+1787305965214,[0m09:52:45  21 of 38 START test not_null_dim_weather_stations_station_type ................. [RUN]
+1787305965231,[0m09:52:45  19 of 38 PASS not_null_dim_weather_stations_longitude .......................... [[32mPASS[0m in 0.09s]
+1787305965236,[0m09:52:45  22 of 38 START test unique_dim_weather_stations_station_id ..................... [RUN]
+1787305965263,[0m09:52:45  16 of 38 OK created sql table model analytics.dim_time ......................... [[32mINSERT 0 1440[0m in 0.16s]
+1787305965264,[0m09:52:45  23 of 38 START test not_null_dim_time_hour ..................................... [RUN]
+1787305965275,[0m09:52:45  20 of 38 PASS not_null_dim_weather_stations_station_id ......................... [[32mPASS[0m in 0.06s]
+1787305965278,[0m09:52:45  24 of 38 START test not_null_dim_time_minute ................................... [RUN]
+1787305965279,[0m09:52:45  21 of 38 PASS not_null_dim_weather_stations_station_type ....................... [[32mPASS[0m in 0.06s]
+1787305965288,[0m09:52:45  25 of 38 START test not_null_dim_time_observation_time ......................... [RUN]
+1787305965289,[0m09:52:45  22 of 38 PASS unique_dim_weather_stations_station_id ........................... [[32mPASS[0m in 0.05s]
+1787305965303,[0m09:52:45  26 of 38 START test unique_dim_time_observation_time ........................... [RUN]
+1787305965319,[0m09:52:45  23 of 38 PASS not_null_dim_time_hour ........................................... [[32mPASS[0m in 0.05s]
+1787305965331,[0m09:52:45  24 of 38 PASS not_null_dim_time_minute ......................................... [[32mPASS[0m in 0.05s]
+1787305965339,[0m09:52:45  25 of 38 PASS not_null_dim_time_observation_time ............................... [[32mPASS[0m in 0.05s]
+1787305965343,[0m09:52:45  26 of 38 PASS unique_dim_time_observation_time ................................. [[32mPASS[0m in 0.04s]
+1787305965345,[0m09:52:45  27 of 38 START sql table model analytics.fact_weather_observations ............. [RUN]
+1787305965372,"[0m09:52:45  [[33mWARNING[0m]: Detected columns with numeric type and unspecified precision/scale, this can lead to unintended rounding: ['dew_point_c', 'humidity_pct', 'precip_accum_mm', 'precip_rate_mm', 'pressure_hpa', 'temperature_c', 'wind_direction_deg', 'wind_gust_kmh', 'wind_speed_kmh']`"
+1787305965690,[0m09:52:45  27 of 38 OK created sql table model analytics.fact_weather_observations ........ [[32mINSERT 0 4950[0m in 0.34s]
+1787305965692,[0m09:52:45  28 of 38 START test not_null_fact_weather_observations_observation_date ........ [RUN]
+1787305965693,[0m09:52:45  29 of 38 START test not_null_fact_weather_observations_observation_time ........ [RUN]
+1787305965699,[0m09:52:45  30 of 38 START test not_null_fact_weather_observations_station_id .............. [RUN]
+1787305965704,[0m09:52:45  31 of 38 START test relationships_fact_weather_observations_observation_date__observation_date__ref_dim_calendar_  [RUN]
+1787305965763,[0m09:52:45  29 of 38 PASS not_null_fact_weather_observations_observation_time .............. [[32mPASS[0m in 0.06s]
+1787305965764,[0m09:52:45  32 of 38 START test relationships_fact_weather_observations_observation_time__observation_time__ref_dim_time_  [RUN]
+1787305965770,[0m09:52:45  30 of 38 PASS not_null_fact_weather_observations_station_id .................... [[32mPASS[0m in 0.06s]
+1787305965777,[0m09:52:45  33 of 38 START test relationships_fact_weather_observations_station_id__station_id__ref_dim_weather_stations_  [RUN]
+1787305965780,[0m09:52:45  28 of 38 PASS not_null_fact_weather_observations_observation_date .............. [[32mPASS[0m in 0.09s]
+1787305965781,[0m09:52:45  31 of 38 PASS relationships_fact_weather_observations_observation_date__observation_date__ref_dim_calendar_  [[32mPASS[0m in 0.07s]
+1787305965791,[0m09:52:45  34 of 38 START test test_humidity .............................................. [RUN]
+1787305965792,[0m09:52:45  35 of 38 START test test_precipitation ......................................... [RUN]
+1787305965822,[0m09:52:45  32 of 38 PASS relationships_fact_weather_observations_observation_time__observation_time__ref_dim_time_  [[32mPASS[0m in 0.06s]
+1787305965823,[0m09:52:45  36 of 38 START test test_temperature ........................................... [RUN]
+1787305965832,[0m09:52:45  33 of 38 PASS relationships_fact_weather_observations_station_id__station_id__ref_dim_weather_stations_  [[32mPASS[0m in 0.05s]
+1787305965833,[0m09:52:45  34 of 38 PASS test_humidity .................................................... [[32mPASS[0m in 0.04s]
+1787305965834,[0m09:52:45  37 of 38 START test test_wind_direction ........................................ [RUN]
+1787305965836,[0m09:52:45  38 of 38 START test test_wind_speed ............................................ [RUN]
+1787305965841,[0m09:52:45  35 of 38 PASS test_precipitation ............................................... [[32mPASS[0m in 0.05s]
+1787305965860,[0m09:52:45  36 of 38 PASS test_temperature ................................................. [[32mPASS[0m in 0.04s]
+1787305965871,[0m09:52:45  38 of 38 PASS test_wind_speed .................................................. [[32mPASS[0m in 0.03s]
+1787305965872,[0m09:52:45  37 of 38 PASS test_wind_direction .............................................. [[32mPASS[0m in 0.04s]
+1787305965893,[0m09:52:45  
+1787305965893,"[0m09:52:45  Finished running 2 seeds, 4 table models, 26 data tests, 6 view models in 0 hours 0 minutes and 1.88 seconds (1.88s)."
+1787305965931,[0m09:52:45  
+1787305965932,[0m09:52:45  [32mCompleted successfully[0m
+1787305965932,[0m09:52:45  
+1787305965932,[0m09:52:45  Done. PASS=38 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=38

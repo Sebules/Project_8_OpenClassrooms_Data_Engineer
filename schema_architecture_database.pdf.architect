@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architect-project version="1.0" appversion="1.0.9">
+ <project-name>schema_architecture_database.pdf</project-name>
+ <print-settings printerName="Microsoft Print to PDF" numCopies="1" zoom="0.21" pageNumbersPrinted="true" orientation="1" paperWidth="595.275590551181" paperHeight="841.8897637795276" leftBorder="50.00314960629921" rightBorder="50.00314960629917" topBorder="50.00314960629921" bottomBorder="50.00314960629928" />
+ <project-data-sources>
+  <data-source id="DS0">
+   <property key="Logical" value="PlayPen Database" />
+  </data-source>
+ </project-data-sources>
+ <source-databases>
+ </source-databases>
+ <target-database id="ppdb" dbcs-ref="DS0">
+  <table id="TAB1" populated="true" UUID="d87c8064-64e8-48ce-a867-a63aeeb71e56" name="fact_weather_observations" objectType="TABLE" physicalName="fact_weather_observations" >
+   <remarks></remarks>
+   <folder id="FOLTAB11" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL2" populated="true" UUID="0e187ff7-287b-48f0-9438-fa3fef6d29f4" autoIncrement="false" autoIncrementSequenceName="fact_weather_observations_station_id_seq" defaultValue="" name="station_id" nullable="0" physicalName="station_id" precision="0" primaryKeySeq="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL3" populated="true" UUID="835bc126-0159-43a2-8375-e4b988fa780a" autoIncrement="false" autoIncrementSequenceName="fact_weather_observations_observation_date_seq" defaultValue="" name="observation_date" nullable="0" physicalName="observation_date" precision="0" primaryKeySeq="1" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL4" populated="true" UUID="139c1bbd-7c65-4c7c-af67-f3c211f7788a" autoIncrement="false" autoIncrementSequenceName="fact_weather_observations_observation_time_seq" defaultValue="" name="observation_time" nullable="0" physicalName="observation_time" precision="0" primaryKeySeq="2" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="92" userDefinedTypeUUID="10d6960f-169d-47c2-860a-37341342b1d5" >
+     <remarks></remarks>
+    </column>
+    <column id="COL5" populated="true" UUID="914ced35-e00e-4ac8-b0ed-9a64003e3978" autoIncrement="false" autoIncrementSequenceName="fact_weather_observations_temperature_c_seq" defaultValue="" name="temperature_c" nullable="1" physicalName="temperature_c" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL6" populated="true" UUID="5f6e8461-5c02-43ca-8fb9-497e553fe214" autoIncrement="false" autoIncrementSequenceName="fact_weather_observations_dew_point_c_seq" defaultValue="" name="dew_point_c" nullable="1" physicalName="dew_point_c" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL7" populated="true" UUID="5ce78525-aa28-4a08-96c2-928109ad9539" autoIncrement="false" autoIncrementSequenceName="fact_weather_observations_pressure_hpa_seq" defaultValue="" name="pressure_hpa" nullable="1" physicalName="pressure_hpa" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
+     <remarks></remarks>
+    </column>
+    <column id="COL8" populated="true" UUID="03dbe6fc-509a-49cd-a6a3-ea784b83a8f1" autoIncrement="false" autoIncrementSequenceName="fact_weather_observations_humidity_pct_seq" defaultValue="" name="humidity_pct" nullable="1" physicalName="humidity_pct" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
+     <remarks></remarks>
+    </column>
+    <column id="COL9" populated="true" UUID="a89c8ee2-028b-4e43-83ec-aefdefc3e577" autoIncrement="false" autoIncrementSequenceName="fact_weather_observations_wind_speed_kmh_seq" defaultValue="" name="wind_speed_kmh" nullable="1" physicalName="wind_speed_kmh" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
+     <remarks></remarks>
+    </column>
+    <column id="COL10" populated="true" UUID="6f2e653d-ff9d-4db9-b2d5-8f5899f5f8c1" autoIncrement="false" autoIncrementSequenceName="fact_weather_observations_wind_gust_kmh_seq" defaultValue="" name="wind_gust_kmh" nullable="1" physicalName="wind_gust_kmh" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
+     <remarks></remarks>
+    </column>
+    <column id="COL11" populated="true" UUID="2c4a5b35-acff-4860-ad08-7b6e94c49762" autoIncrement="false" autoIncrementSequenceName="fact_weather_observations_precip_rate_mm_seq" defaultValue="" name="precip_rate_mm" nullable="1" physicalName="precip_rate_mm" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
+     <remarks></remarks>
+    </column>
+    <column id="COL12" populated="true" UUID="ffd82c64-ba54-48fa-984c-0a65c6e82338" autoIncrement="false" autoIncrementSequenceName="fact_weather_observations_precip_accum_mm_seq" defaultValue="" name="precip_accum_mm" nullable="1" physicalName="precip_accum_mm" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
+     <remarks></remarks>
+    </column>
+    <column id="COL13" populated="true" UUID="c264a184-d57a-4322-a4a7-a3661bbee129" autoIncrement="false" autoIncrementSequenceName="fact_weather_observations_wind_direction_deg_seq" defaultValue="" name="wind_direction_deg" nullable="1" physicalName="wind_direction_deg" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB13" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB12" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB14" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX14" populated="true" UUID="96df14f8-146d-4585-a07d-a905636fe403" clustered="false" name="fact_weather_observations_pk" physicalName="fact_weather_observations_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC15" populated="true" UUID="5a511532-1880-4629-a1ec-07daa4067c45" ascendingOrDescending="UNSPECIFIED" column-ref="COL2" name="station_id" physicalName="station_id" />
+     <index-column id="IDC16" populated="true" UUID="36d4a392-4427-4b3d-836c-dd93b0c2413b" ascendingOrDescending="UNSPECIFIED" column-ref="COL3" name="observation_date" physicalName="observation_date" />
+     <index-column id="IDC17" populated="true" UUID="2ee9b514-ceb0-45fc-8f48-ff36f9d85e6d" ascendingOrDescending="UNSPECIFIED" column-ref="COL4" name="observation_time" physicalName="observation_time" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB18" populated="true" UUID="a6535cfa-1f17-4019-abf6-5e052bed7776" name="dim_weather_stations" objectType="TABLE" physicalName="dim_weather_stations" >
+   <remarks></remarks>
+   <folder id="FOLTAB181" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL19" populated="true" UUID="b8121153-2cbf-43f9-8f68-f97d34e44506" autoIncrement="false" autoIncrementSequenceName="dim_weather_stations_station_id_seq" defaultValue="" name="station_id" nullable="0" physicalName="station_id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL20" populated="true" UUID="d09fb332-f3c2-4f48-88b5-8af3e88a332c" autoIncrement="false" autoIncrementSequenceName="dim_weather_stations_station_name_seq" defaultValue="" name="station_name" nullable="0" physicalName="station_name" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL21" populated="true" UUID="3dffedf1-6d48-4d91-8bfe-4fba441b6ef8" autoIncrement="false" autoIncrementSequenceName="dim_weather_stations_latitude_seq" defaultValue="" name="latitude" nullable="0" physicalName="latitude" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
+     <remarks></remarks>
+    </column>
+    <column id="COL22" populated="true" UUID="b069dd1a-0ca6-479b-b971-a05e232a6ae8" autoIncrement="false" autoIncrementSequenceName="dim_weather_stations_longitude_seq" defaultValue="" name="longitude" nullable="0" physicalName="longitude" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
+     <remarks></remarks>
+    </column>
+    <column id="COL23" populated="true" UUID="b2f5788a-4cd4-4c36-a26c-bede0c36ca2f" autoIncrement="false" autoIncrementSequenceName="dim_weather_stations_elevation_seq" defaultValue="" name="elevation" nullable="1" physicalName="elevation" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
+     <remarks></remarks>
+    </column>
+    <column id="COL24" populated="true" UUID="f67a16fd-0186-4bc1-9e07-ea8645b25600" autoIncrement="false" autoIncrementSequenceName="dim_weather_stations_city_seq" defaultValue="" name="city" nullable="0" physicalName="city" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL25" populated="true" UUID="baf3b578-936b-46b4-b09f-7864f88e1105" autoIncrement="false" autoIncrementSequenceName="dim_weather_stations_state_seq" defaultValue="" name="state" nullable="1" physicalName="state" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL26" populated="true" UUID="94acd3ea-37b6-494c-948a-9fef2ebcde38" autoIncrement="false" autoIncrementSequenceName="dim_weather_stations_hardware_seq" defaultValue="" name="hardware" nullable="1" physicalName="hardware" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL27" populated="true" UUID="0bc80f25-227c-4d7f-9762-07512e1f80cf" autoIncrement="false" autoIncrementSequenceName="dim_weather_stations_software_seq" defaultValue="" name="software" nullable="1" physicalName="software" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL28" populated="true" UUID="28ad3913-88db-408b-90d8-646d382316cb" autoIncrement="false" autoIncrementSequenceName="dim_weather_stations_station_type_seq" defaultValue="" name="station_type" nullable="0" physicalName="station_type" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB183" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB182" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB184" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX29" populated="true" UUID="533658ba-206c-4c35-baa1-5f7c1ff791e6" clustered="false" name="dim_weather_stations_pk" physicalName="dim_weather_stations_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC30" populated="true" UUID="233ddd38-9f52-4466-811a-b33bafa53e47" ascendingOrDescending="UNSPECIFIED" column-ref="COL19" name="station_id" physicalName="station_id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB31" populated="true" UUID="5083c54b-f436-4571-b031-173d8330ce4e" name="dim_calendar" objectType="TABLE" physicalName="dim_calendar" >
+   <remarks></remarks>
+   <folder id="FOLTAB311" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL32" populated="true" UUID="05dee530-b737-437d-ae46-3a01c95a97fa" autoIncrement="false" autoIncrementSequenceName="dim_calendar_observation_date_seq" defaultValue="" name="observation_date" nullable="0" physicalName="observation_date" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL33" populated="true" UUID="0b5e3c1f-5c50-4967-8c84-2342cda273ab" autoIncrement="false" autoIncrementSequenceName="dim_calendar_year_seq" defaultValue="" name="year" nullable="0" physicalName="year" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL34" populated="true" UUID="05be83e3-502c-4cbd-80d1-1d5b72ec08b5" autoIncrement="false" autoIncrementSequenceName="dim_calendar_month_seq" defaultValue="" name="month" nullable="0" physicalName="month" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL35" populated="true" UUID="79136b8f-1474-48e5-b0c5-4b0369315f9a" autoIncrement="false" autoIncrementSequenceName="dim_calendar_day_seq" defaultValue="" name="day" nullable="0" physicalName="day" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB313" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB312" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB314" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX36" populated="true" UUID="5bf4fc9b-0d84-4729-a3d0-bebc54e97fcf" clustered="false" name="dim_calendar_pk" physicalName="dim_calendar_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC37" populated="true" UUID="1fe64de4-dbc6-4e96-8e45-7e70a3df8fa1" ascendingOrDescending="UNSPECIFIED" column-ref="COL32" name="observation_date" physicalName="observation_date" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB38" populated="true" UUID="c8345033-42a3-46a2-a305-9083b3abf9d5" name="dim_time" objectType="TABLE" physicalName="dim_time" >
+   <remarks></remarks>
+   <folder id="FOLTAB381" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL39" populated="true" UUID="7a2fd655-3c45-4dda-af19-e0fe4e488cc2" autoIncrement="false" autoIncrementSequenceName="dim_time_observation_time_seq" defaultValue="" name="observation_time" nullable="0" physicalName="observation_time" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="92" userDefinedTypeUUID="10d6960f-169d-47c2-860a-37341342b1d5" >
+     <remarks></remarks>
+    </column>
+    <column id="COL40" populated="true" UUID="4b3194b4-8d4c-4610-987f-e83c903b7551" autoIncrement="false" autoIncrementSequenceName="dim_time_hour_seq" defaultValue="" name="hour" nullable="0" physicalName="hour" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL41" populated="true" UUID="561be9a2-0b80-40db-a387-a26e70d0284f" autoIncrement="false" autoIncrementSequenceName="dim_time_minute_seq" defaultValue="" name="minute" nullable="0" physicalName="minute" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB383" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB382" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB384" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX42" populated="true" UUID="b2bc0290-d8fb-4493-92d7-659f360842df" clustered="false" name="dim_time_pk" physicalName="dim_time_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC43" populated="true" UUID="57a18ccb-739b-40bc-9e6f-2ac5eaf41ab2" ascendingOrDescending="UNSPECIFIED" column-ref="COL39" name="observation_time" physicalName="observation_time" />
+    </index>
+   </folder>
+  </table>
+  <relationships>
+   <relationship id="REL44" populated="true" UUID="a137d79e-09e3-41ba-96bc-6853b58b955b" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="dim_weather_stations_fact_weather_observations_fk" physicalName="dim_weather_stations_fact_weather_observations_fk" pk-table-ref="TAB18" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP45" populated="true" UUID="71b6b5ea-c462-445d-a26c-11147336d2dc" fk-column-ref="COL2" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL19" />
+   </relationship>
+   <relationship id="REL46" populated="true" UUID="116acba8-af22-4232-941f-f331e45b3920" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="dim_calendar_fact_weather_observations_fk" physicalName="dim_calendar_fact_weather_observations_fk" pk-table-ref="TAB31" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP47" populated="true" UUID="c7988386-4691-4da5-8309-29263a3d0d70" fk-column-ref="COL3" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL32" />
+   </relationship>
+   <relationship id="REL48" populated="true" UUID="639abcf4-72b0-4b01-931b-87d931948f1f" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="dim_time_fact_weather_observations_fk" physicalName="dim_time_fact_weather_observations_fk" pk-table-ref="TAB38" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP49" populated="true" UUID="44b4362d-5c94-4eda-9845-aee3757c4ee6" fk-column-ref="COL4" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL39" />
+   </relationship>
+  </relationships>
+ </target-database>
+ <ddl-generator type="ca.sqlpower.architect.ddl.GenericDDLGenerator" allow-connection="true"> </ddl-generator>
+ <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
+ <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
+ <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+  <table-pane table-ref="TAB1" x="393" y="333" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB18" x="324" y="84" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB31" x="752" y="118" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB38" x="744" y="547" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL44" pkConnection="0.49230769230769234" fkConnection="0.5023696682464455" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL48" pkConnection="0.15492957746478872" fkConnection="0.6243654822335025" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL46" pkConnection="0.2938388625592417" fkConnection="0.9493087557603687" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+ </play-pen>
+ <critic-manager>
+  <critic-grouping platformType="Generic" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PrimaryKeyCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.RelationshipMappingTypeCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.EmptyRelationshipCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericSequenceNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetDefaultOnColumnWithNoDefaultCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetNullOnNonNullableColumnCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DuplicateNameCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="DB2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DB2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="H2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.H2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="HSQLDB" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.HSQLDBUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="MySQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLCommentCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="Oracle" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OraclePhysicalNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="PostgreSQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PostgreSQLReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerUnsupportedFeaturesCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2000" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2000UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2005" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2005UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+ </critic-manager>
+ <profiles topNCount="10">
+  </profiles>
+  <olap>
+  </olap>
+  <olap-gui>
+  </olap-gui>
+</architect-project>

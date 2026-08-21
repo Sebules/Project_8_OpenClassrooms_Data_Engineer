@@ -1,0 +1,247 @@
+>> ATTEMPT 1/1
+
+2026-08-21 11:36:33 info APPLY Stage: BUILD — (workloadId=bf1c709c-9be2-4515-a4b6-494ff9486fe3_1787270400000_discover)
+2026-08-21 11:36:33 info APPLY Stage: CLAIM — (workloadId=bf1c709c-9be2-4515-a4b6-494ff9486fe3_1787270400000_discover)
+2026-08-21 11:36:33 info Claimed: true for workload bf1c709c-9be2-4515-a4b6-494ff9486fe3_1787270400000_discover via API in dataplane 08ca9547-376c-4fcf-843e-7dd89f037e76 (27f7c661-91eb-407d-8c2f-b13619399105)
+2026-08-21 11:36:33 info APPLY Stage: LOAD_SHED — (workloadId=bf1c709c-9be2-4515-a4b6-494ff9486fe3_1787270400000_discover)
+2026-08-21 11:36:33 info APPLY Stage: CHECK_STATUS — (workloadId=bf1c709c-9be2-4515-a4b6-494ff9486fe3_1787270400000_discover)
+2026-08-21 11:36:33 info No pod found running for workload bf1c709c-9be2-4515-a4b6-494ff9486fe3_1787270400000_discover
+2026-08-21 11:36:33 info APPLY Stage: MUTEX — (workloadId=bf1c709c-9be2-4515-a4b6-494ff9486fe3_1787270400000_discover)
+2026-08-21 11:36:33 info No mutex key specified for workload: bf1c709c-9be2-4515-a4b6-494ff9486fe3_1787270400000_discover. Continuing...
+2026-08-21 11:36:33 info APPLY Stage: ARCHITECTURE — (workloadId=bf1c709c-9be2-4515-a4b6-494ff9486fe3_1787270400000_discover)
+2026-08-21 11:36:33 info APPLY Stage: LAUNCH — (workloadId=bf1c709c-9be2-4515-a4b6-494ff9486fe3_1787270400000_discover)
+2026-08-21 11:36:33 info [initContainer] image: airbyte/workload-init-container:2.2.0 resources: ResourceRequirements(claims=[], limits={}, requests={memory=0, cpu=0}, additionalProperties={})
+2026-08-21 11:36:41 info Attempting to update workload: bf1c709c-9be2-4515-a4b6-494ff9486fe3_1787270400000_discover to LAUNCHED.
+2026-08-21 11:36:41 info Pipeline completed for workload: bf1c709c-9be2-4515-a4b6-494ff9486fe3_1787270400000_discover.
+2026-08-21 11:36:49 info 
+2026-08-21 11:36:49 info Transitioning workload to running state
+2026-08-21 11:36:49 info Connector exited, processing output
+2026-08-21 11:36:49 info ----- START DISCOVER -----
+2026-08-21 11:36:49 info 
+2026-08-21 11:36:49 info Output file jobOutput.json found
+2026-08-21 11:36:49 info Connector exited with exit code 0
+2026-08-21 11:36:49 info Reading messages from protocol version 0.2.0
+2026-08-21 11:36:49 info Discovering schema of Weather_Underground_La_Madeleine_FR at https://raw.githubusercontent.com/Sebules/Project_8_OpenClassrooms_Data_Engineer/refs/heads/main/donnees/Weather_Underground_La_Madeleine_FR.csv...
+2026-08-21 11:36:49 info TransportParams: None
+2026-08-21 11:36:49 info Checking for optional control message...
+2026-08-21 11:36:49 info Writing catalog result to API...
+2026-08-21 11:36:50 info Workload successfully transitioned to running state
+2026-08-21 11:36:50 info Finished writing catalog result to API.
+2026-08-21 11:36:50 info Writing output of bf1c709c-9be2-4515-a4b6-494ff9486fe3_1787270400000_discover to the doc store
+2026-08-21 11:36:50 info Marking workload bf1c709c-9be2-4515-a4b6-494ff9486fe3_1787270400000_discover as successful
+2026-08-21 11:36:50 info Deliberately exiting process with code 0.
+2026-08-21 11:36:50 info 
+2026-08-21 11:36:50 info ----- END DISCOVER -----
+2026-08-21 11:36:50 info 
+2026-08-21 11:36:51 info APPLY Stage: BUILD — (workloadId=373270f0-7ce4-497d-bdc4-1138cb2c2f80_7_0_sync)
+2026-08-21 11:36:51 info APPLY Stage: CLAIM — (workloadId=373270f0-7ce4-497d-bdc4-1138cb2c2f80_7_0_sync)
+2026-08-21 11:36:51 info Claimed: true for workload 373270f0-7ce4-497d-bdc4-1138cb2c2f80_7_0_sync via API in dataplane 08ca9547-376c-4fcf-843e-7dd89f037e76 (27f7c661-91eb-407d-8c2f-b13619399105)
+2026-08-21 11:36:51 info APPLY Stage: LOAD_SHED — (workloadId=373270f0-7ce4-497d-bdc4-1138cb2c2f80_7_0_sync)
+2026-08-21 11:36:51 info APPLY Stage: CHECK_STATUS — (workloadId=373270f0-7ce4-497d-bdc4-1138cb2c2f80_7_0_sync)
+2026-08-21 11:36:51 info No pod found running for workload 373270f0-7ce4-497d-bdc4-1138cb2c2f80_7_0_sync
+2026-08-21 11:36:51 info APPLY Stage: MUTEX — (workloadId=373270f0-7ce4-497d-bdc4-1138cb2c2f80_7_0_sync)
+2026-08-21 11:36:51 info Mutex key: 373270f0-7ce4-497d-bdc4-1138cb2c2f80 specified for workload: 373270f0-7ce4-497d-bdc4-1138cb2c2f80_7_0_sync. Attempting to delete existing pods...
+2026-08-21 11:36:51 info Mutex key: 373270f0-7ce4-497d-bdc4-1138cb2c2f80 specified for workload: 373270f0-7ce4-497d-bdc4-1138cb2c2f80_7_0_sync found no existing pods. Continuing...
+2026-08-21 11:36:51 info APPLY Stage: ARCHITECTURE — (workloadId=373270f0-7ce4-497d-bdc4-1138cb2c2f80_7_0_sync)
+2026-08-21 11:36:51 info Building STDIO environment: source IPC options missing
+2026-08-21 11:36:51 info APPLY Stage: LAUNCH — (workloadId=373270f0-7ce4-497d-bdc4-1138cb2c2f80_7_0_sync)
+2026-08-21 11:36:51 info [initContainer] image: airbyte/workload-init-container:2.2.0 resources: ResourceRequirements(claims=[], limits={memory=4Gi, cpu=3}, requests={memory=0, cpu=0}, additionalProperties={})
+2026-08-21 11:36:51 info Launching replication pod: replication-job-7-attempt-0 (selectors = {}) with containers:
+2026-08-21 11:36:51 info [source] image: airbyte/source-file:0.6.0 resources: ResourceRequirements(claims=[], limits={memory=4Gi, cpu=3}, requests={memory=0, cpu=0}, additionalProperties={})
+2026-08-21 11:36:51 info [destination] image: airbyte/destination-postgres:3.0.16 resources: ResourceRequirements(claims=[], limits={memory=4Gi, cpu=3}, requests={memory=0, cpu=0}, additionalProperties={})
+2026-08-21 11:36:51 info [orchestrator] image: airbyte/container-orchestrator:2.2.0 resources: ResourceRequirements(claims=[], limits={memory=4Gi, cpu=3}, requests={memory=0, cpu=0}, additionalProperties={})
+2026-08-21 11:37:01 info Attempting to update workload: 373270f0-7ce4-497d-bdc4-1138cb2c2f80_7_0_sync to LAUNCHED.
+2026-08-21 11:37:01 info Pipeline completed for workload: 373270f0-7ce4-497d-bdc4-1138cb2c2f80_7_0_sync.
+2026-08-21 11:37:09 info Running replication worker...
+2026-08-21 11:37:09 info Starting replication worker. job id: 7 attempt: 0
+2026-08-21 11:37:10 info 
+2026-08-21 11:37:10 info ----- START REPLICATION -----
+2026-08-21 11:37:10 info 
+2026-08-21 11:37:10 info Running destination...
+2026-08-21 11:37:10 info Writing messages to protocol version 0.2.0
+2026-08-21 11:37:10 info Reading messages from protocol version 0.2.0
+2026-08-21 11:37:10 info Reading messages from protocol version 0.2.0
+2026-08-21 11:37:10 info DestinationWriter started.
+2026-08-21 11:37:10 info MessageProcessor started.
+2026-08-21 11:37:10 info SourceReader started.
+2026-08-21 11:37:10 info DestinationReader started.
+2026-08-21 11:37:10 info Starting workload heartbeat (interval=10s; timeout=600s)
+2026-08-21 11:37:10 info Transitioning workload to running state
+2026-08-21 11:37:10 info Malformed non-Airbyte record (connectionId = 373270f0-7ce4-497d-bdc4-1138cb2c2f80): 2026-08-21T09:37:08.847437810Z main WARN for URI classpath:AirbyteLogMessageTemplate.json found 2 resources, using the first one: jar:file:/airbyte/lib/io.airbyte.airbyte-cdk.java.airbyte-cdk-airbyte-cdk-core-0.48.18.jar!/AirbyteLogMessageTemplate.json
+2026-08-21 11:37:10 info INFO main i.m.c.e.DefaultEnvironment(<init>):168 Established active environments: [k8s, cloud, cli, destination, connector]
+2026-08-21 11:37:12 warn WARN main c.k.j.j.JsonSchemaGenerator$MyJsonFormatVisitorWrapper(expectAnyFormat):725 Not able to generate jsonSchema-info for type: [simple type, class com.fasterxml.jackson.databind.JsonNode] - probably using custom serializer which does not override acceptJsonFormatVisitor
+2026-08-21 11:37:12 info INFO main i.a.c.l.c.NamespaceMappingBeanFactory(dataChannelMedium):26 Using data channel medium STDIO
+2026-08-21 11:37:12 info INFO main i.a.c.l.c.NamespaceMappingBeanFactory(namespaceMapper):38 Going to use the given source value: SOURCE for namespace
+2026-08-21 11:37:13 info INFO main i.a.c.l.c.DestinationCatalog(<init>):52 Destination catalog initialized: [DestinationStream(unmappedNamespace=null, unmappedName=Weather_Underground_La_Madeleine_FR, generationId=2, minimumGenerationId=2, syncId=7, namespaceMapper=io.airbyte.cdk.load.command.NamespaceMapper@8ec1b8bd, tableSchema=StreamTableSchema(tableNames=TableNames(rawTableName=null, tempTableName=TableName(namespace=raw, name=rawWeather_leine_FR1501974c115826365b468ab65aece244), finalTableName=TableName(namespace=raw, name=Weather_Underground_La_Madeleine_FR)), columnSchema=ColumnSchema(inputSchema={UV=FieldType(type=NumberType, nullable=true), Date=FieldType(type=StringType, nullable=true), Gust=FieldType(type=StringType, nullable=true), Time=FieldType(type=StringType, nullable=true), Wind=FieldType(type=StringType, nullable=true), Solar=FieldType(type=StringType, nullable=true), Speed=FieldType(type=StringType, nullable=true), Humidity=FieldType(type=StringType, nullable=true), Pressure=FieldType(type=StringType, nullable=true), tab_name=FieldType(type=NumberType, nullable=true), Dew Point=FieldType(type=StringType, nullable=true), Temperature=FieldType(type=StringType, nullable=true), Precip. Rate.=FieldType(type=StringType, nullable=true), Precip. Accum.=FieldType(type=StringType, nullable=true)}, inputToFinalColumnNames={UV=UV, Date=Date, Gust=Gust, Time=Time, Wind=Wind, Solar=Solar, Speed=Speed, Humidity=Humidity, Pressure=Pressure, tab_name=tab_name, Dew Point=Dew_Point, Temperature=Temperature, Precip. Rate.=Precip__Rate_, Precip. Accum.=Precip__Accum_}, finalSchema={UV=ColumnType(type=decimal, nullable=true), Date=ColumnType(type=varchar, nullable=true), Gust=ColumnType(type=varchar, nullable=true), Time=ColumnType(type=varchar, nullable=true), Wind=ColumnType(type=varchar, nullable=true), Solar=ColumnType(type=varchar, nullable=true), Speed=ColumnType(type=varchar, nullable=true), Humidity=ColumnType(type=varchar, nullable=true), Pressure=ColumnType(type=varchar, nullable=true), tab_name=ColumnType(type=decimal, nullable=true), Dew_Point=ColumnType(type=varchar, nullable=true), Temperature=ColumnType(type=varchar, nullable=true), Precip__Rate_=ColumnType(type=varchar, nullable=true), Precip__Accum_=ColumnType(type=varchar, nullable=true)}), importType=Append))]
+2026-08-21 11:37:13 info INFO main c.z.h.HikariDataSource(<init>):79 HikariPool-1 - Starting...
+2026-08-21 11:37:13 info INFO main c.z.h.HikariDataSource(<init>):81 HikariPool-1 - Start completed.
+2026-08-21 11:37:13 info INFO main i.a.c.AirbyteConnectorRunnable(run):35 Executing class io.airbyte.cdk.load.write.WriteOperation operation.
+2026-08-21 11:37:13 info INFO main i.a.c.l.w.WriteOperation(execute):21 Running destination write...
+2026-08-21 11:37:13 info INFO main i.a.c.l.d.DestinationLifecycle$initializeDestination$1(invokeSuspend):51 Initializing the destination
+2026-08-21 11:37:13 info INFO main i.a.i.d.p.c.PostgresAirbyteClient(execute):453 CREATE SCHEMA IF NOT EXISTS "raw";
+2026-08-21 11:37:14 info INFO main i.a.i.d.p.c.PostgresAirbyteClient(execute):453 CREATE SCHEMA IF NOT EXISTS "raw";
+2026-08-21 11:37:14 info INFO main i.a.i.d.p.c.PostgresAirbyteClient(executeQuery):489 SELECT COUNT(*) AS "total" FROM "raw"."Weather_Underground_La_Madeleine_FR";
+2026-08-21 11:37:14 info INFO main i.a.i.d.p.c.PostgresAirbyteClient(executeQuery):489 SELECT COUNT(*) AS "total" FROM "raw"."rawWeather_leine_FR1501974c115826365b468ab65aece244";
+2026-08-21 11:37:14 info INFO main i.a.c.l.d.DestinationLifecycle$initializeDestination$1(invokeSuspend):53 Destination initialized
+2026-08-21 11:37:14 info INFO DefaultDispatcher-worker-1 i.a.c.l.d.DestinationLifecycle$initializeIndividualStreams$1$result$1$1(invokeSuspend):64 Starting stream loader for stream null:Weather_Underground_La_Madeleine_FR
+2026-08-21 11:37:14 info INFO DefaultDispatcher-worker-1 i.a.c.l.t.d.DirectLoadTableAppendTruncateStreamLoader(start):170 AppendTruncateStreamLoader starting for stream Weather_Underground_La_Madeleine_FR
+2026-08-21 11:37:14 info INFO DefaultDispatcher-worker-1 i.a.i.d.p.c.PostgresAirbyteClient(executeQuery):489 SELECT "_airbyte_generation_id" FROM "raw"."Weather_Underground_La_Madeleine_FR" LIMIT 1;
+2026-08-21 11:37:14 info INFO DefaultDispatcher-worker-1 i.a.c.l.t.d.DirectLoadTableAppendTruncateStreamLoader(start):222 Creating temp table raw.rawWeather_leine_FR1501974c115826365b468ab65aece244 (real table has old generation ID) for stream Weather_Underground_La_Madeleine_FR
+2026-08-21 11:37:14 info INFO DefaultDispatcher-worker-1 i.a.i.d.p.c.PostgresAirbyteClient(execute):453             BEGIN TRANSACTION;
+            DROP TABLE IF EXISTS "raw"."rawWeather_leine_FR1501974c115826365b468ab65aece244" CASCADE;
+            CREATE TABLE IF NOT EXISTS "raw"."rawWeather_leine_FR1501974c115826365b468ab65aece244" (
+                "_airbyte_raw_id" varchar NOT NULL,
+"_airbyte_extracted_at" timestamp with time zone NOT NULL,
+"_airbyte_meta" jsonb NOT NULL,
+"_airbyte_generation_id" bigint NOT NULL,
+"UV" decimal,
+"Date" varchar,
+"Gust" varchar,
+"Time" varchar,
+"Wind" varchar,
+"Solar" varchar,
+"Speed" varchar,
+"Humidity" varchar,
+"Pressure" varchar,
+"tab_name" decimal,
+"Dew_Point" varchar,
+"Temperature" varchar,
+"Precip__Rate_" varchar,
+"Precip__Accum_" varchar
+            );
+            COMMIT;
+2026-08-21 11:37:14 info INFO DefaultDispatcher-worker-1 i.a.i.d.p.c.PostgresAirbyteClient(execute):453 
+
+CREATE INDEX IF NOT EXISTS "idx_extracted_at_rawWeather_leine_FR1501974c115826365b468ab65aece244" ON "raw"."rawWeather_leine_FR1501974c115826365b468ab65aece244" ("_airbyte_extracted_at");
+2026-08-21 11:37:14 info INFO DefaultDispatcher-worker-1 i.a.c.l.t.d.DirectLoadTableAppendTruncateStreamLoader(start):236 Target table: raw.rawWeather_leine_FR1501974c115826365b468ab65aece244 for stream Weather_Underground_La_Madeleine_FR
+2026-08-21 11:37:14 info INFO DefaultDispatcher-worker-1 i.a.c.l.d.DestinationLifecycle$initializeIndividualStreams$1$result$1$1(invokeSuspend):69 Stream loader for stream null:Weather_Underground_La_Madeleine_FR started
+2026-08-21 11:37:14 info INFO main i.a.c.l.d.p.PipelineRunner(run):40 Destination Pipeline Starting...
+2026-08-21 11:37:14 info INFO main i.a.c.l.d.p.PipelineRunner(run):42 Starting state reconciler...
+2026-08-21 11:37:14 info INFO main i.a.c.l.d.p.PipelineRunner(run):45 Starting 1 pipelines...
+2026-08-21 11:37:14 error CryptographyDeprecationWarning: TripleDES has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.TripleDES and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+2026-08-21 11:37:14 error CryptographyDeprecationWarning: TripleDES has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.TripleDES and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+2026-08-21 11:37:14 info Workload successfully transitioned to running state
+2026-08-21 11:37:14 info Syncing stream: Weather_Underground_La_Madeleine_FR (https://raw.githubusercontent.com/Sebules/Project_8_OpenClassrooms_Data_Engineer/refs/heads/main/donnees/Weather_Underground_La_Madeleine_FR.csv)...
+2026-08-21 11:37:14 info TransportParams: None
+2026-08-21 11:37:14 info Marking stream Weather_Underground_La_Madeleine_FR as RUNNING
+2026-08-21 11:37:14 info Stream status TRACE received of status: STARTED for stream Weather_Underground_La_Madeleine_FR
+2026-08-21 11:37:14 info Sending update for Weather_Underground_La_Madeleine_FR - null -> RUNNING
+2026-08-21 11:37:14 info Stream Status Update Received: Weather_Underground_La_Madeleine_FR - RUNNING
+2026-08-21 11:37:14 info Creating status: Weather_Underground_La_Madeleine_FR - RUNNING
+2026-08-21 11:37:14 info Stream status TRACE received of status: RUNNING for stream Weather_Underground_La_Madeleine_FR
+2026-08-21 11:37:15 info Marking stream Weather_Underground_La_Madeleine_FR as STOPPED
+2026-08-21 11:37:15 info INFO pool-2-thread-1 i.a.i.d.p.c.PostgresAirbyteClient(executeQuery):489 SELECT column_name, data_type, is_nullable
+FROM information_schema.columns
+WHERE table_schema = 'raw'
+AND table_name = 'rawWeather_leine_FR1501974c115826365b468ab65aece244'
+ORDER BY ordinal_position;
+2026-08-21 11:37:15 info Stream completed: null.Weather_Underground_La_Madeleine_FR
+2026-08-21 11:37:15 info Current stream completion status: {io.airbyte.protocol.models.v0.StreamDescriptor@7525db5d[name=Weather_Underground_La_Madeleine_FR,namespace=<null>,additionalProperties={}]=false}
+2026-08-21 11:37:16 info Stream status TRACE received of status: COMPLETE for stream Weather_Underground_La_Madeleine_FR
+2026-08-21 11:37:26 info Total records read: (499 KB)
+2026-08-21 11:37:26 info Schema validation was performed to a max of 10 records with errors per stream.
+2026-08-21 11:37:26 info SourceReader finished.
+2026-08-21 11:37:26 info Source queue closed — stopping message processor...
+2026-08-21 11:37:26 info MessageProcessor finished.
+2026-08-21 11:37:26 info DestinationWriter finished.
+2026-08-21 11:37:26 info INFO DefaultDispatcher-worker-1 i.a.c.l.d.i.JsonDestinationMessageInputFlow$collect$4(invokeSuspend):47 Input stream reader closed.
+2026-08-21 11:37:26 info INFO pool-2-thread-1 i.a.c.l.d.i.JsonDestinationMessageInputFlow(collect):51 Finished reading input.
+2026-08-21 11:37:26 info INFO pool-2-thread-1 i.a.c.l.d.i.DataFlowPipelineInputFlow(collect):58 Finished routing input.
+2026-08-21 11:37:26 info INFO DefaultDispatcher-worker-1 i.a.c.l.d.p.PipelineCompletionHandler$apply$2(invokeSuspend):33 Flushing 1 final aggregates...
+2026-08-21 11:37:26 info INFO DefaultDispatcher-worker-2 i.a.i.d.p.w.l.PostgresInsertBuffer(flush):58 Beginning insert into raw.rawWeather_leine_FR1501974c115826365b468ab65aece244
+2026-08-21 11:37:26 info INFO DefaultDispatcher-worker-2 i.a.i.d.p.w.l.PostgresInsertBuffer(flush):61 Finished insert of 1908 row(s) into raw.rawWeather_leine_FR1501974c115826365b468ab65aece244
+2026-08-21 11:37:26 info INFO DefaultDispatcher-worker-1 i.a.c.l.d.p.PipelineCompletionHandler$apply$2(invokeSuspend):48 Final aggregates flushed.
+2026-08-21 11:37:26 info INFO main i.a.c.l.d.p.PipelineRunner(run):47 Individual pipelines complete...
+2026-08-21 11:37:26 info INFO main i.a.c.l.d.p.PipelineRunner(run):51 Disabling state reconciler...
+2026-08-21 11:37:26 info INFO main i.a.c.l.d.p.PipelineRunner(run):64 Flushing final states...
+2026-08-21 11:37:27 info Destination complete for Weather_Underground_La_Madeleine_FR
+2026-08-21 11:37:27 info Sending update for Weather_Underground_La_Madeleine_FR - RUNNING -> COMPLETE
+2026-08-21 11:37:27 info Stream Status Update Received: Weather_Underground_La_Madeleine_FR - COMPLETE
+2026-08-21 11:37:27 info Updating status: Weather_Underground_La_Madeleine_FR - COMPLETE
+2026-08-21 11:37:27 info INFO main i.a.c.l.d.p.PipelineRunner(run):75 Destination Pipeline Completed — Successfully
+2026-08-21 11:37:27 info INFO DefaultDispatcher-worker-3 i.a.c.l.d.DestinationLifecycle$finalizeIndividualStreams$2$1$1(invokeSuspend):93 Finalizing stream null:Weather_Underground_La_Madeleine_FR
+2026-08-21 11:37:27 info INFO DefaultDispatcher-worker-3 i.a.c.l.t.d.DirectLoadTableAppendTruncateStreamLoader(teardown):247 Overwriting raw.rawWeather_leine_FR1501974c115826365b468ab65aece244 with raw.Weather_Underground_La_Madeleine_FR for stream Weather_Underground_La_Madeleine_FR
+2026-08-21 11:37:27 info INFO DefaultDispatcher-worker-3 i.a.i.d.p.c.PostgresAirbyteClient(execute):453 BEGIN TRANSACTION;
+DROP TABLE IF EXISTS "raw"."Weather_Underground_La_Madeleine_FR" CASCADE;
+ALTER TABLE "raw"."rawWeather_leine_FR1501974c115826365b468ab65aece244" RENAME TO "Weather_Underground_La_Madeleine_FR";
+COMMIT;
+2026-08-21 11:37:27 info INFO DefaultDispatcher-worker-3 i.a.c.l.d.DestinationLifecycle$finalizeIndividualStreams$2$1$1(invokeSuspend):97 Finalized stream null:Weather_Underground_La_Madeleine_FR
+2026-08-21 11:37:27 info INFO main i.a.c.l.d.DestinationLifecycle$teardownDestination$1(invokeSuspend):108 Tearing down the destination
+2026-08-21 11:37:27 info INFO main i.a.c.l.d.DestinationLifecycle$teardownDestination$1(invokeSuspend):110 Destination torn down
+2026-08-21 11:37:27 info INFO main i.a.c.l.w.WriteOperation(execute):23 Destination write complete.
+2026-08-21 11:37:27 info INFO main i.a.c.AirbyteConnectorRunnable(run):47 Flushing output consumer prior to shutdown.
+2026-08-21 11:37:27 info INFO main i.a.c.AirbyteConnectorRunnable(run):49 Completed integration: airbyte/destination-postgres.
+2026-08-21 11:37:27 info DestinationReader finished.
+2026-08-21 11:37:27 info Closing StateCheckSumCountEventHandler
+2026-08-21 11:37:27 info No checksum errors were reported in the entire sync.
+2026-08-21 11:37:27 info Sync summary: {
+  "status" : "completed",
+  "recordsSynced" : 1908,
+  "bytesSynced" : 511211,
+  "startTime" : 1787305029650,
+  "endTime" : 1787305047287,
+  "totalStats" : {
+    "additionalStats" : { },
+    "bytesCommitted" : 511211,
+    "bytesEmitted" : 511211,
+    "destinationStateMessagesEmitted" : 1,
+    "destinationWriteEndTime" : 1787305047104,
+    "destinationWriteStartTime" : 1787305030024,
+    "meanSecondsBeforeSourceStateMessageEmitted" : 0,
+    "maxSecondsBeforeSourceStateMessageEmitted" : 1,
+    "maxSecondsBetweenStateMessageEmittedandCommitted" : 0,
+    "meanSecondsBetweenStateMessageEmittedandCommitted" : 0,
+    "recordsEmitted" : 1908,
+    "recordsCommitted" : 1908,
+    "recordsFilteredOut" : 0,
+    "bytesFilteredOut" : 0,
+    "replicationEndTime" : 1787305047110,
+    "replicationStartTime" : 1787305029650,
+    "sourceReadEndTime" : 1787305046492,
+    "sourceReadStartTime" : 1787305030037,
+    "sourceStateMessagesEmitted" : 1
+  },
+  "streamStats" : [ {
+    "streamName" : "Weather_Underground_La_Madeleine_FR",
+    "stats" : {
+      "additionalStats" : {
+        "truncatedValueCount" : 0.0,
+        "nulledValueCount" : 0.0,
+        "sourceFieldsPopulated" : 26654
+      },
+      "bytesCommitted" : 511211,
+      "bytesEmitted" : 511211,
+      "estimatedBytes" : 0,
+      "estimatedRecords" : 0,
+      "recordsEmitted" : 1908,
+      "recordsCommitted" : 1908,
+      "recordsFilteredOut" : 0,
+      "bytesFilteredOut" : 0
+    }
+  } ],
+  "performanceMetrics" : { },
+  "streamCount" : 1
+}
+2026-08-21 11:37:27 info Failures: [ ]
+2026-08-21 11:37:27 info 
+2026-08-21 11:37:27 info ----- END REPLICATION -----
+2026-08-21 11:37:27 info Closing io.micronaut.context.propagation.instrument.execution.ContextPropagatingExecutorService@54a7d1b9
+2026-08-21 11:37:27 info 
+2026-08-21 11:37:27 info Closing io.micronaut.context.propagation.instrument.execution.ContextPropagatingExecutorService@209f0986
+2026-08-21 11:37:27 info Closing io.airbyte.container.orchestrator.worker.io.LocalContainerAirbyteDestination@c0b10ae
+2026-08-21 11:37:27 info Closing io.airbyte.container.orchestrator.worker.io.LocalContainerAirbyteSource@14b0b7f9
+2026-08-21 11:37:27 info Closing io.airbyte.container.orchestrator.worker.RecordSchemaValidator@69860811
+2026-08-21 11:37:27 info Closing io.airbyte.container.orchestrator.persistence.SyncPersistenceImpl@3ad80206
+2026-08-21 11:37:27 info Returning output...
+2026-08-21 11:37:28 info 
+----- START POST REPLICATION OPERATIONS -----
+
+
+2026-08-21 11:37:28 info No post-replication operation(s) to perform.
+2026-08-21 11:37:28 info 
+----- END POST REPLICATION OPERATIONS -----
+
+
+
+
+
