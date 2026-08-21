@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <architect-project version="1.0" appversion="1.0.9">
  <project-name>schema_base_de_donnees</project-name>
- <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
+ <print-settings printerName="Microsoft Print to PDF" numCopies="1" zoom="0.78" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
  <project-data-sources>
   <data-source id="DS0">
    <property key="Logical" value="PlayPen Database" />
@@ -16,10 +16,10 @@
     <column id="COL2" populated="true" UUID="0e187ff7-287b-48f0-9438-fa3fef6d29f4" autoIncrement="false" autoIncrementSequenceName="fact_weather_observations_station_id_seq" defaultValue="" name="station_id" nullable="0" physicalName="station_id" precision="0" primaryKeySeq="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL3" populated="true" UUID="835bc126-0159-43a2-8375-e4b988fa780a" autoIncrement="false" autoIncrementSequenceName="fact_weather_observations_observation_date_seq" defaultValue="" name="observation_date" nullable="0" physicalName="observation_date" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+    <column id="COL3" populated="true" UUID="835bc126-0159-43a2-8375-e4b988fa780a" autoIncrement="false" autoIncrementSequenceName="fact_weather_observations_observation_date_seq" defaultValue="" name="observation_date" nullable="0" physicalName="observation_date" precision="0" primaryKeySeq="1" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
      <remarks></remarks>
     </column>
-    <column id="COL4" populated="true" UUID="139c1bbd-7c65-4c7c-af67-f3c211f7788a" autoIncrement="false" autoIncrementSequenceName="fact_weather_observations_observation_time_seq" defaultValue="" name="observation_time" nullable="0" physicalName="observation_time" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="92" userDefinedTypeUUID="10d6960f-169d-47c2-860a-37341342b1d5" >
+    <column id="COL4" populated="true" UUID="139c1bbd-7c65-4c7c-af67-f3c211f7788a" autoIncrement="false" autoIncrementSequenceName="fact_weather_observations_observation_time_seq" defaultValue="" name="observation_time" nullable="0" physicalName="observation_time" precision="0" primaryKeySeq="2" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="92" userDefinedTypeUUID="10d6960f-169d-47c2-860a-37341342b1d5" >
      <remarks></remarks>
     </column>
     <column id="COL5" populated="true" UUID="914ced35-e00e-4ac8-b0ed-9a64003e3978" autoIncrement="false" autoIncrementSequenceName="fact_weather_observations_temperature_c_seq" defaultValue="" name="temperature_c" nullable="1" physicalName="temperature_c" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
@@ -106,9 +106,64 @@
     </index>
    </folder>
   </table>
+  <table id="TAB31" populated="true" UUID="5083c54b-f436-4571-b031-173d8330ce4e" name="dim_calendar" objectType="TABLE" physicalName="dim_calendar" >
+   <remarks></remarks>
+   <folder id="FOLTAB311" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL32" populated="true" UUID="05dee530-b737-437d-ae46-3a01c95a97fa" autoIncrement="false" autoIncrementSequenceName="dim_calendar_observation_date_seq" defaultValue="" name="observation_date" nullable="0" physicalName="observation_date" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL33" populated="true" UUID="0b5e3c1f-5c50-4967-8c84-2342cda273ab" autoIncrement="false" autoIncrementSequenceName="dim_calendar_year_seq" defaultValue="" name="year" nullable="0" physicalName="year" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL34" populated="true" UUID="05be83e3-502c-4cbd-80d1-1d5b72ec08b5" autoIncrement="false" autoIncrementSequenceName="dim_calendar_month_seq" defaultValue="" name="month" nullable="0" physicalName="month" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL35" populated="true" UUID="79136b8f-1474-48e5-b0c5-4b0369315f9a" autoIncrement="false" autoIncrementSequenceName="dim_calendar_day_seq" defaultValue="" name="day" nullable="0" physicalName="day" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB313" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB312" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB314" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX36" populated="true" UUID="5bf4fc9b-0d84-4729-a3d0-bebc54e97fcf" clustered="false" name="dim_calendar_pk" physicalName="dim_calendar_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC37" populated="true" UUID="1fe64de4-dbc6-4e96-8e45-7e70a3df8fa1" ascendingOrDescending="UNSPECIFIED" column-ref="COL32" name="observation_date" physicalName="observation_date" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB38" populated="true" UUID="c8345033-42a3-46a2-a305-9083b3abf9d5" name="dim_time" objectType="TABLE" physicalName="dim_time" >
+   <remarks></remarks>
+   <folder id="FOLTAB381" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL39" populated="true" UUID="7a2fd655-3c45-4dda-af19-e0fe4e488cc2" autoIncrement="false" autoIncrementSequenceName="dim_time_observation_time_seq" defaultValue="" name="observation_time" nullable="0" physicalName="observation_time" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="92" userDefinedTypeUUID="10d6960f-169d-47c2-860a-37341342b1d5" >
+     <remarks></remarks>
+    </column>
+    <column id="COL40" populated="true" UUID="4b3194b4-8d4c-4610-987f-e83c903b7551" autoIncrement="false" autoIncrementSequenceName="dim_time_hour_seq" defaultValue="" name="hour" nullable="0" physicalName="hour" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL41" populated="true" UUID="561be9a2-0b80-40db-a387-a26e70d0284f" autoIncrement="false" autoIncrementSequenceName="dim_time_minute_seq" defaultValue="" name="minute" nullable="0" physicalName="minute" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB383" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB382" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB384" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX42" populated="true" UUID="b2bc0290-d8fb-4493-92d7-659f360842df" clustered="false" name="dim_time_pk" physicalName="dim_time_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC43" populated="true" UUID="57a18ccb-739b-40bc-9e6f-2ac5eaf41ab2" ascendingOrDescending="UNSPECIFIED" column-ref="COL39" name="observation_time" physicalName="observation_time" />
+    </index>
+   </folder>
+  </table>
   <relationships>
-   <relationship id="REL31" populated="true" UUID="a137d79e-09e3-41ba-96bc-6853b58b955b" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="dim_weather_stations_fact_weather_observations_fk" physicalName="dim_weather_stations_fact_weather_observations_fk" pk-table-ref="TAB18" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP32" populated="true" UUID="71b6b5ea-c462-445d-a26c-11147336d2dc" fk-column-ref="COL2" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL19" />
+   <relationship id="REL44" populated="true" UUID="a137d79e-09e3-41ba-96bc-6853b58b955b" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="dim_weather_stations_fact_weather_observations_fk" physicalName="dim_weather_stations_fact_weather_observations_fk" pk-table-ref="TAB18" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP45" populated="true" UUID="71b6b5ea-c462-445d-a26c-11147336d2dc" fk-column-ref="COL2" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL19" />
+   </relationship>
+   <relationship id="REL46" populated="true" UUID="116acba8-af22-4232-941f-f331e45b3920" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="dim_calendar_fact_weather_observations_fk" physicalName="dim_calendar_fact_weather_observations_fk" pk-table-ref="TAB31" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP47" populated="true" UUID="c7988386-4691-4da5-8309-29263a3d0d70" fk-column-ref="COL3" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL32" />
+   </relationship>
+   <relationship id="REL48" populated="true" UUID="639abcf4-72b0-4b01-931b-87d931948f1f" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="dim_time_fact_weather_observations_fk" physicalName="dim_time_fact_weather_observations_fk" pk-table-ref="TAB38" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP49" populated="true" UUID="44b4362d-5c94-4eda-9845-aee3757c4ee6" fk-column-ref="COL4" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL39" />
    </relationship>
   </relationships>
  </target-database>
@@ -118,7 +173,11 @@
  <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
   <table-pane table-ref="TAB1" x="393" y="333" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB18" x="324" y="84" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-link relationship-ref="REL31" pkConnection="0.49230769230769234" fkConnection="0.5023696682464455" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-pane table-ref="TAB31" x="752" y="118" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB38" x="744" y="547" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL44" pkConnection="0.49230769230769234" fkConnection="0.5023696682464455" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL48" pkConnection="0.15492957746478872" fkConnection="0.6243654822335025" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL46" pkConnection="0.2938388625592417" fkConnection="0.9493087557603687" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
  </play-pen>
  <critic-manager>
   <critic-grouping platformType="Generic" enabled="true">
