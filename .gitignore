@@ -5,5 +5,7 @@ guide_indexation_dbt_postgresql.md
 .env
 .html
 .pdf
-log-events-viewer-result-1.csv
-log-events-viewer-result-2.csv
+log-events-viewer-result.csv
+log-events-viewer-result_doc.csv
+ecr-deploy-user_accessKeys.csv
+.zip
